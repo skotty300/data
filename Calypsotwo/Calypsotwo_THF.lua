@@ -79,7 +79,7 @@ function init_gear_sets()
     --------------------------------------
 
     sets.TreasureHunter = {head="Turms Cap",body="Emet Harness +1",hands="Plunderer's Armlets +1",
-		back="Toutatis's Cape",waist="Chaac Belt",ring2="Defending Ring",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
+		back="Mecistopins Mantle",waist="Chaac Belt",ring2="Defending Ring",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
     sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
 

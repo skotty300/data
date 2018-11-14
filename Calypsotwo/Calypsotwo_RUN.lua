@@ -104,7 +104,7 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	sets.precast.JA['Vallation'] = set_combine(sets.Enmity, {body="Runeist's Coat +3", legs="Futhark Trousers +1", back="Ogma's Cape"})
 	sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
-	sets.precast.JA['Pflug'] = set_combine(sets.Enmity, {feet="Runeist Bottes +1"})
+	sets.precast.JA['Pflug'] = set_combine(sets.Enmity, {feet="Runeist's Bottes +2"})
 	sets.precast.JA['Battuta'] = set_combine(sets.Enmity, {head="Futhark Bandeau +3"})
 	sets.precast.JA['Liement'] = set_combine(sets.Enmity, {body="Futhark Coat +3"})
 
@@ -364,6 +364,7 @@ function init_gear_sets()
 
 	sets.midcast.EnhancingDuration = {
 		head="Erilaz Galea +1",
+		hands="Regal Gauntlets",
 		legs="Futhark Trousers +1"
 		}
 
@@ -407,10 +408,10 @@ function init_gear_sets()
 		ammo="Staunch Tathlum",
 		head="Futhark Bandeau +3",
 		body="Runeist's Coat +3",
-		hands="Turms Mittens",
+		hands="Regal Gauntlets",
 		legs="Erilaz Leg Guards +1",
 		feet="Turms Leggings",
-		neck="Loricate Torque +1",
+		neck="Futhark Torque +1",
 		ear1="Etiolation Earring",
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
@@ -419,24 +420,7 @@ function init_gear_sets()
 		waist="Flume Belt +1"
 		}
 
-	sets.idle.DT = {
-		sub="Mensch Strap", --3/3
-		ammo="Staunch Tathlum", --2/2
-		head="Erilaz Galea +1",
-		body="Erilaz Surcoat +1",
-		hands="Erilaz Gauntlets +1",
-		legs="Eri. Leg Guards +1", --7/0
-		feet="Erilaz Greaves +1", --5/0
-		neck="Loricate Torque +1", --6/6
-		ear1="Odnowa Earring", --0/1
-		ear2="Odnowa Earring +1", --0/2
-		ring1="Default Ring", --3/0
-		ring2="Vocane Ring", --10/10
-		back="Moonbeam Cape", --7/4
-		waist="Flume Belt +1" --4/0
-		}
-
-	sets.idle.Weak = sets.idle.DT
+	sets.idle.Weak = sets.idle
 	sets.Kiting = {legs="Carmine Cuisses +1"}
 
 	--------------------------------------
@@ -618,7 +602,7 @@ function init_gear_sets()
 		hands="Turms Mittens",
 		legs="Erilaz Leg Guards +1",
 		feet="Turms Leggings",
-		neck="Loricate Torque +1",
+		neck="Futhark Torque +1",
 		ear1="Etiolation Earring",
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
@@ -639,7 +623,7 @@ function init_gear_sets()
 		ear1="Sanare Earring",
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Purity Ring",
 		back=gear.parry_cape,
 		waist="Engraved Belt"
 		}
@@ -656,13 +640,13 @@ function init_gear_sets()
 		ear1="Sanare Earring",
 		ear2="Hearty Earring",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Purity Ring",
 		back=gear.parry_cape,
 		waist="Engraved Belt"
 		}
 
 	-- Custom buff sets
-	sets.buff.Doom = {ring1="Saida Ring", ring2="Saida Ring", waist="Gishdubar Sash"}
+	sets.buff.Doom = {ring1="Saida Ring", ring2="Purity Ring", waist="Gishdubar Sash"}
 
 end
 

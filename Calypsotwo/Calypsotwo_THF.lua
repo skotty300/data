@@ -79,7 +79,7 @@ function init_gear_sets()
     --------------------------------------
 
     sets.TreasureHunter = {head="Turms Cap",body="Emet Harness +1",hands="Plunderer's Armlets +1",
-		back="Mecistopins Mantle",waist="Chaac Belt",ring2="Defending Ring",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
+		back="Mecistopins Mantle",waist="Chaac Belt",ring2="Defending Ring",ring1="Vocane Ring",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
     sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
 
@@ -281,22 +281,12 @@ function init_gear_sets()
     sets.engaged = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Sherida Earring",
         body="Pillager's Vest +2",hands="Adhemar Wristbands",ring1="Hetairoi ring",ring2="Epona's Ring",
-        back="Mecistopins Mantle",waist="Reiki Yotai",legs="Samnuha Tights",feet="Plunderer's Poulaines"}
+        back=gear.tp_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Plunderer's Poulaines"}
 		
     sets.engaged.Acc = {ammo="Yamarang",
         head="Pillager's Bonnet +2",neck="Iskur Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
         body="Pillager's Vest +2",hands="Mummu Wrists +2",ring1="Regal ring",ring2="Patricius Ring",
-        back=gear.tp_back,waist="Kentarch Belt +1",legs="Herculean Trousers",feet="Herculean boots"}
-
-    sets.engaged.PDT = {ammo="Yamarang",
-        head="Lithelimb cap",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Emet Harness +1",hands="Herculean gloves",ring1="Defending Ring",ring2="Epona's Ring",
-        back="Moonbeam Cape",waist="Patentia Sash",legs="Mummu Kecks +2",feet=gear.tp_feet}
-		
-    sets.engaged.Acc.PDT = {ammo="Yamarang",
-        head="Whirlpool Mask",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Emet Harness +1",hands="Herculean gloves",ring1="Defending Ring",ring2="Epona's Ring",
-        back="Moonbeam Cape",waist="Kentarch belt +1",legs="Mummu Kecks +2",feet=gear.tp_feet}
+        back=gear.tp_back,waist="Kentarch Belt +1",legs="Pillager's Culottes +2",feet="Herculean boots"}
 end
 
 

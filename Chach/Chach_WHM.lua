@@ -481,9 +481,22 @@ function init_gear_sets()
     
     -- Basic set for if no TP weapon is defined.
     sets.engaged = {
-        head="None",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
-        body="Respite Cloak",hands="Chironic Gloves",ring1="Rajas Ring",ring2="K'ayres Ring",
-        back="Alaunus's Cape",waist="Windbuffet belt",legs="Telchine Braconi",feet="Chironic Slippers"}
+    main="Bolelabunga",
+    sub="Genmei Shield",
+    ammo="Staunch Tathlum",
+    head="Inyanga Tiara +2",
+    body={ name="Piety Briault +3", augments={'Enhances "Benediction" effect',}},
+    hands="Inyan. Dastanas +2",
+    legs="Inyanga Shalwar +2",
+    feet="Inyan. Crackows +2",
+    neck="Sanctity Necklace",
+    waist="Fucho-no-Obi",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Shneddick Ring",
+    right_ring="Paguroidea Ring",
+    back="Moonbeam Cape",
+}
 
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.

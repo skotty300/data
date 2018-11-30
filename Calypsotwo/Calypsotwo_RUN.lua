@@ -39,7 +39,7 @@ end
 -------------------------------------------------------------------------------------------------------------------
 
 function user_setup()
-	state.OffenseMode:options('Normal', 'HighAcc', 'Inquartata', 'MDT', 'DPS', 'PDT', 'MEva', 'Resist')
+	state.OffenseMode:options('Normal', 'HighAcc', 'MDT', 'DPS', 'PDT', 'MEva', 'Resist')
 	state.WeaponskillMode:options('Normal', 'Acc')
 	state.CastingMode:options('Normal', 'Resistant')
 	state.IdleMode:options('Normal', 'DT')
@@ -542,23 +542,6 @@ function init_gear_sets()
 		waist="Windbuffet Belt +1"
 		}
 
-	sets.engaged.Inquartata = {
-		sub="Utu Grip",
-		ammo="Staunch Tathlum",
-		head="Futhark Bandeau +3",
-		body="Futhark Coat +3",
-		hands="Turms Mittens",
-		legs="Erilaz Leg Guards +1",
-		feet="Turms Leggings",
-		neck="Loricate Torque +1",
-		ear1="Etiolation Earring",
-		ear2="Odnowa Earring +1",
-		ring1="Defending Ring",
-		ring2="Vocane Ring",
-		back=gear.parry_cape,
-		waist="Flume Belt +1"
-		}
-
 	sets.engaged.MDT = {
 		sub="Utu Grip",
 		ammo="Staunch Tathlum",
@@ -579,7 +562,7 @@ function init_gear_sets()
 	sets.engaged.DPS = {
 		sub="Utu Grip",
 		ammo="Staunch Tathlum",
-		head="Meghanada Visor +2",
+		head="Ayanmo Zucchetto +2",
 		body="Ayanmo Corazza +2",
 		hands="Meghanada Gloves +2",
 		legs="Erilaz Leg Guards +1",

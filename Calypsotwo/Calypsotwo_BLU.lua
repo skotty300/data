@@ -247,7 +247,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {ammo="Sapience Orb",
-        head="Carmine Mask",ear2="Loquacious Earring",
+        head="Carmine Mask",ear2="Loquacious Earring",ear1="Enchanter Earring +1",
         body="Jhakri Robe +2",hands="Leyline Gloves",ring1="Kishar Ring",
         back="Swith Cape +1",waist="Witful Belt",legs="Ayanmo Cosciales +2",feet="Jhakri Pigaches +2"}
         
@@ -290,7 +290,7 @@ function init_gear_sets()
     
     -- Midcast Sets
     sets.midcast.FastRecast = {
-        head="Carmine Mask",ear2="Loquacious Earring",
+        head="Carmine Mask",ear2="Loquacious Earring",ear1="Enchanter Earring +1",
         body="Luhlaza Jubbah",hands="Mavi Bazubands +2",ring1="Prolix Ring",
         back="Swith Cape +1",waist="Hurch'lan Sash",legs="Ayanmo Cosciales +2",feet="Iuitl Gaiters +1"}
         

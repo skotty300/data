@@ -31,7 +31,6 @@ function user_setup()
 
     gear.default.weaponskill_waist = "Windbuffet Belt +1"
 	gear.regen_back = { name="Nantosuelta's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}
-	gear.pet_regen_legs = { name="Telchine Braconi", augments={'Pet: "Regen"+3',}}
 
     select_default_macro_book()
 end
@@ -55,8 +54,8 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
     sets.precast.JA.Bolster = {body="Bagua Tunic +3"}
-    sets.precast.JA['Life Cycle'] = {head="Azimuth Hood +1", body="Geomancy Tunic +2", back="Nantosuelta's Cape"}
-    sets.precast.JA['Full Circle'] = {hands="Bagua Mitaines +2"}
+    sets.precast.JA['Life Cycle'] = {head="Azimuth Hood +1", body="Geomancy Tunic +3", back="Nantosuelta's Cape"}
+    sets.precast.JA['Full Circle'] = {hands="Bagua Mitaines +3"}
     sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +2"}
 
     -- Fast cast sets for spells
@@ -73,7 +72,7 @@ function init_gear_sets()
 
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
         neck="Stoicheion Medal",
-        hands="Bagua Mitaines +2"
+        hands="Bagua Mitaines +3"
     })
     
     -- Weaponskill sets
@@ -118,7 +117,7 @@ function init_gear_sets()
         ear2="Loquacious Earring",
         neck="Incanter's Torque",
         body="Azimuth Coat", -- 3%
-        hands="Geomancy Mitaines +2", -- 3%
+        hands="Geomancy Mitaines +3", -- 3%
         ring1="Prolix Ring",
         back="Lifestream Cape",
         waist="Witful Belt", -- 4%
@@ -130,7 +129,7 @@ function init_gear_sets()
         head="Azimuth Hood +1", -- 12
         neck="Incanter's Torque", -- 10
         ear1="Gifted Earring",
-        hands="Geomancy Mitaines +2", -- 15
+        hands="Geomancy Mitaines +3", -- 15
         body="Bagua Tunic +3", -- 14
         back="Lifestream Cape", -- 9
 		ring1="Stikini Ring",
@@ -221,8 +220,8 @@ function init_gear_sets()
         neck="Erra Pendant", 
         ear1="Lifestorm Earring", 
         ear2="Regal Earring",
-        body="Geomancy Tunic +2",
-        hands="Geomancy Mitaines +2",
+        body="Geomancy Tunic +3",
+        hands="Geomancy Mitaines +3",
         ring1="Stikini Ring", 
         ring2="Stikini Ring",
         back="Refraction Cape",
@@ -236,7 +235,7 @@ function init_gear_sets()
         neck="Erra Pendant", 
         ring1="Evanescence Ring",
         ring2="Archon Ring",
-        body="Geomancy Tunic +2",
+        body="Geomancy Tunic +3",
         waist="Fucho-no-obi",
 		back="Perimede Cape"
     })
@@ -285,13 +284,13 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {sub="Genmei Shield",range="Dunna",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-        body="Jhakri Robe +2",hands="Bagua Mitaines +2",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Jhakri Robe +2",hands="Bagua Mitaines +3",ring1="Defending Ring",ring2="Vocane Ring",
     	back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assiduity pants +1",feet="Geomancy Sandals +3"
     }
 	
     sets.idle.PDT = set_combine(sets.idle, {
         head="Hike Khat +1",
-        hands="Geomancy Mitaines +2",
+        hands="Geomancy Mitaines +3",
     	back="Moonbeam Cape",
         feet="Azimuth Gaiters +1"
     })
@@ -299,10 +298,10 @@ function init_gear_sets()
     -- .Pet sets are for when Luopan is present.
     sets.idle.Pet = set_combine(sets.idle, {
         head="Azimuth Hood +1",
-        hands="Geomancy Mitaines +2",
+        hands="Geomancy Mitaines +3",
         back=gear.regen_back,
 		waist="Isa Belt",
-		legs=gear.pet_regen_legs,
+		legs="Telchine Braconi",
         feet="Bagua Sandals +2"
     })
 
@@ -348,7 +347,7 @@ function init_gear_sets()
 		ear1="Ethereal Earring",
         ear2="Etiolation Earring",
         body="Jhakri Robe +2",
-        hands="Geomancy Mitaines +2",
+        hands="Geomancy Mitaines +3",
         ring1="Defending Ring",
         ring2="Vocane Ring",
         back="Moonbeam Cape",
@@ -383,7 +382,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {
         neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Azimuth Coat",hands="Geomancy Mitaines +2",ring1="Rajas Ring",ring2="Petrov ring",
+        body="Azimuth Coat",hands="Geomancy Mitaines +3",ring1="Rajas Ring",ring2="Petrov ring",
         back="Kayapa Cape",waist="Windbuffet Belt +1",legs="Geomancy Pants +2",feet="Umbani Boots"}
 		
 end

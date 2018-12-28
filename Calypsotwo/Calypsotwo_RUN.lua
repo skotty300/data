@@ -44,7 +44,7 @@ function user_setup()
 	state.CastingMode:options('Normal', 'Resistant')
 	state.IdleMode:options('Normal', 'DT')
 	state.PhysicalDefenseMode:options('PDT', 'HP')
-	state.MagicalDefenseMode:options('MDT', 'Status')
+	state.MagicalDefenseMode:options('MDT', 'MEva')
 	
 	state.Runes = M{['description']='Runes', "Ignis", "Gelus", "Flabra", "Tellus", "Sulpor", "Unda", "Lux", "Tenebrae"}
 
@@ -408,6 +408,7 @@ function init_gear_sets()
 		ammo="Staunch Tathlum",
 		head="Futhark Bandeau +3",
 		body="Runeist's Coat +3",
+		-- body="Futhark Coat +3",
 		hands="Regal Gauntlets",
 		legs="Erilaz Leg Guards +1",
 		feet="Turms Leggings",
@@ -461,19 +462,19 @@ function init_gear_sets()
 		waist="Engraved Belt"
 		}
 
-	sets.defense.Status = {
+	sets.defense.MEva = {
 		sub="Utu Grip",
 		ammo="Staunch Tathlum",
 		head="Turms Cap",
 		body="Runeist's Coat +3",
-		hands="Meghanada Gloves +2",
-		legs="Runiest's Trousers +2",
+		hands="Turms Mittens",
+		legs="Erilaz Leg Guards +1",
 		feet="Turms Leggings",
-		neck="Moonbeam Necklace",
+		neck="Warder's Charm +1",
 		ear1="Sanare Earring",
-		ear2="Hearty Earring",
+		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Purity Ring",
 		back=gear.parry_cape,
 		waist="Engraved Belt"
 		}

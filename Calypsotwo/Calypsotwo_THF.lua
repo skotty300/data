@@ -79,7 +79,7 @@ function init_gear_sets()
     --------------------------------------
 
     sets.TreasureHunter = {head="Turms Cap",body="Emet Harness +1",hands="Plunderer's Armlets +1",
-		back="Mecistopins Mantle",waist="Chaac Belt",ring2="Defending Ring",ring1="Vocane Ring",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
+		back=gear.tp_back,waist="Chaac Belt",ring2="Defending Ring",ring1="Vocane Ring",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
     sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
 
@@ -308,6 +308,11 @@ end
 -- Run after the general midcast() set is constructed.
 function job_post_midcast(spell, action, spellMap, eventArgs)
     if state.TreasureMode.value ~= 'None' and spell.action_type == 'Ranged Attack' then
+        equip(sets.TreasureHunter)
+    end
+
+    
+    if state.TreasureMode.value ~= 'None' and spell.skill == 'Enfeebling Magic' then
         equip(sets.TreasureHunter)
     end
 end

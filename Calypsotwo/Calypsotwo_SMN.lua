@@ -232,14 +232,14 @@ function init_gear_sets()
     
     sets.midcast.Pet.PhysicalBloodPactRage = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet",
         head="Helios Band",neck="Shulmanu Collar",ear1="Gelos earring", ear2="Lugalbanda earring",
-		body="Convoker's Doublet +2",hands=gear.bp_physical_hands,ring1="Varar Ring",ring2="Varar Ring +1",
+		body="Convoker's Doublet +2",hands=gear.bp_physical_hands,ring1="Varar Ring +1",ring2="Varar Ring +1",
 		back=gear.pet_melee_back,waist="Incarnation Sash",legs=gear.bp_physical_legs,feet="Apogee Pumps"}
 
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = sets.midcast.Pet.PhysicalBloodPactRage
 
     sets.midcast.Pet.MagicalBloodPactRage = {main="Grioavolr",ammo="Sancus Sachet",
         head="Apogee Crown",neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-        body="Apogee Dalmatica",hands=gear.bp_magical_hands,ring1="Varar Ring",ring2="Varar Ring +1",
+        body="Apogee Dalmatica",hands=gear.bp_magical_hands,ring1="Varar Ring +1",ring2="Varar Ring +1",
         back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: Magic Damage+10',}},
 		waist="Regal Belt",legs="Enticer's Pants",feet="Apogee Pumps"}
 

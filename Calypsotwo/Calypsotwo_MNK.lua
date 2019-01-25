@@ -96,7 +96,7 @@ function init_gear_sets()
     sets.precast.WS = {ammo="Thew Bomblet",
         head="Whirlpool Mask",neck=gear.ElementalGorget,ear1="Brutal Earring",ear2="Moonshade Earring",
         body="Hizamaru Haramaki +2",hands="Hesychast's Gloves +1",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Atheling Mantle",waist="Caudata Belt",legs="Hizamaru Hizayoroi +1",feet="Adhemar Gamashes"}
+        back="Atheling Mantle",waist="Caudata Belt",legs="Hizamaru Hizayoroi +1",feet="Adhemar Gamashes +1"}
     sets.precast.WSAcc = {ammo="Honed Tathlum",body="Manibozho Jerkin",back="Letalis Mantle",feet="Qaaxo Leggings"}
     sets.precast.WSMod = {ammo="Tantra Tathlum",head="Felistris Mask",legs="Hesychast's Hose +1",feet="Daihanshi Habaki"}
     sets.precast.MaxTP = {ear1="Bladeborn Earring",ear2="Steelflash Earring"}

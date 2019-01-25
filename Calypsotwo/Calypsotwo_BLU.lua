@@ -257,8 +257,8 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         head="Adhemar Bonnet",neck=gear.ElementalGorget,ear1="Moonshade Earring",ear2="Brutal Earring",
-        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.melee_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes"}
+        body="Adhemar Jacket",hands="Adhemar Wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
+        back=gear.melee_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes +1"}
     
     sets.precast.WS.acc = set_combine(sets.precast.WS, {hands="Buremte Gloves"})
 
@@ -276,16 +276,16 @@ function init_gear_sets()
     sets.precast.WS['Savage Blade'] = {ammp="Floestone",
         head=gear.physical_head,neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Assimilator's Jubbah +2",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.savage_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes"}
+        back=gear.savage_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes +1"}
 		
     sets.precast.WS['Expiacion'] = {ammp="Floestone",
         head=gear.physical_head,neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Assimilator's Jubbah +2",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.savage_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes"}
+        back=gear.savage_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes +1"}
 		
     sets.precast.WS['Chant du Cygne'] = {ammo="Jukukik Feather",
         head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-        body="Abnoba Kaftan",hands="Adhemar Wristbands",ring1="Begrudging Ring",ring2="Epona's Ring",
+        body="Abnoba Kaftan",hands="Adhemar Wristbands +1",ring1="Begrudging Ring",ring2="Epona's Ring",
         back=gear.cdc_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Thereoid Greaves"}
     
     -- Midcast Sets
@@ -300,7 +300,7 @@ function init_gear_sets()
     
     sets.midcast['Blue Magic'].Physical = {ammo="Floestone",
         head=gear.physical_head,neck="Caro Necklace",ear1="Heartseeker Earring",ear2="Steelflash Earring",
-        body=gear.cdc_body,hands="Adhemar Wristbands",ring1="Rajas Ring",ring2="Ifrit Ring",
+        body=gear.cdc_body,hands="Adhemar Wristbands +1",ring1="Rajas Ring",ring2="Ifrit Ring",
         back=gear.savage_cape,waist="Caudata Belt",legs="Herculean Trousers",feet=gear.tp_feet}
 
     sets.midcast['Blue Magic'].PhysicalAcc = set_combine(sets.midcast['Blue Magic'].Physical,
@@ -403,7 +403,7 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum",
         head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Bloodgem Earring",ear2="Loquacious Earring",
         body="Jhakri Robe +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Adhemar Gamashes"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Adhemar Gamashes +1"}
 
     sets.idle.PDT = {ammo="Staunch Tathlum",
         head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Bloodgem Earring",ear2="Loquacious Earring",
@@ -413,7 +413,7 @@ function init_gear_sets()
     sets.idle.Town = {ammo="Staunch Tathlum",
         head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Bloodgem Earring",ear2="Loquacious Earring",
         body="Jhakri Robe +2",hands="Assimilator's Bazubands +2",ring1="Sheltered Ring",ring2="Vocane Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Adhemar Gamashes"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Adhemar Gamashes +1"}
 
     sets.idle.Learning = set_combine(sets.idle, sets.Learning)
     
@@ -440,7 +440,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Hetairoi Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket",hands="Adhemar Wristbands +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
 
     sets.engaged.Acc = {ammo="Honed Tathlum",
@@ -460,7 +460,7 @@ function init_gear_sets()
 
     sets.engaged.DW = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
-        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Hetairoi Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket",hands="Adhemar Wristbands +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
 
     sets.engaged.DW.Acc = {ammo="Honed Tathlum",
@@ -470,7 +470,7 @@ function init_gear_sets()
 
     sets.engaged.DW.Refresh = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
-        body="Jhakri Robe +2",hands="Adhemar Wristbands",ring1="Hetairoi Ring",ring2="Epona's Ring",
+        body="Jhakri Robe +2",hands="Adhemar Wristbands +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
 		
     sets.engaged.DW.PDT = {ammo="Staunch Tathlum",

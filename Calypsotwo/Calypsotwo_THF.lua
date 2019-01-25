@@ -143,8 +143,8 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Yamarang",
         head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-        body="Lustratio Harness",hands="Adhemar Wristbands",ring1="Rajas Ring",ring2="Ifrit Ring",
-        back=gear.ws_back,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes"}
+        body="Lustratio Harness",hands="Adhemar Wristbands +1",ring1="Rajas Ring",ring2="Ifrit Ring",
+        back=gear.ws_back,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes +1"}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Honed Tathlum", back="Letalis Mantle"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -162,8 +162,8 @@ function init_gear_sets()
 
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Seething Bomblet +1",
         head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-        body="Plunderer's Vest +1",hands="Adhemar Wristbands",ring1="Begrudging Ring",ring2="Regal Ring",
-        back=gear.ws_back,waist="Fotia Belt",legs="Plunderer's Culottes",feet="Adhemar Gamashes"})
+        body="Plunderer's Vest +1",hands="Adhemar Wristbands +1",ring1="Begrudging Ring",ring2="Regal Ring",
+        back=gear.ws_back,waist="Fotia Belt",legs="Plunderer's Culottes",feet="Adhemar Gamashes +1"})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {ammo="Honed Tathlum", back="Letalis Mantle"})
     sets.precast.WS['Evisceration'].SA = set_combine(sets.precast.WS['Evisceration'].Mod, {})
     sets.precast.WS['Evisceration'].TA = set_combine(sets.precast.WS['Evisceration'].Mod, {})
@@ -280,7 +280,7 @@ function init_gear_sets()
 	--Mecistopins Mantle
     sets.engaged = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Sherida Earring",
-        body="Pillager's Vest +2",hands="Adhemar Wristbands",ring1="Hetairoi ring",ring2="Epona's Ring",
+        body="Pillager's Vest +2",hands="Adhemar Wristbands +1",ring1="Hetairoi ring",ring2="Epona's Ring",
         back=gear.tp_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Plunderer's Poulaines"}
 		
     sets.engaged.Acc = {ammo="Yamarang",

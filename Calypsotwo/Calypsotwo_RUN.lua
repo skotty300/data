@@ -54,7 +54,7 @@ function user_setup()
 	gear.tp_feet = { name="Herculean Boots", augments={'Attack+15','INT+7','Quadruple Attack +3','Accuracy+11 Attack+11',}}
 	gear.wsd_head = { name="Herculean Helm", augments={'Attack+15','Weapon skill damage +4%','AGI+5',}}
 	gear.wsd_body = { name="Herculean Vest", augments={'Attack+29','Weapon skill damage +4%','STR+12','Accuracy+4',}}
-	gear.parry_cape = { name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}}
+	gear.pdt_cape = { name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}}
 	gear.melee_cape = { name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}}
 	gear.fast_cape = { name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10','Damage taken-5%',}}
 	gear.phalanx_body = { name="Taeon Tabard", augments={'Accuracy+20','Spell interruption rate down -3%','Phalanx +3',}}
@@ -97,7 +97,7 @@ function init_gear_sets()
 		ear2="Friomisi Earring", --2
 		ring1="Supershear Ring", --5
 		ring2="Eihwaz Ring", --5
-		back=gear.parry_cape, --4
+		back=gear.pdt_cape, --4
 		waist="Goading Belt" --4
 		}
 
@@ -182,7 +182,7 @@ function init_gear_sets()
 		ammo="Aqreqaq Bomblet",
 		head=gear.physical_head,
 		body="Adhemar Jacket",
-		hands="Adhemar Wristbands",
+		hands="Adhemar Wristbands +1",
 		legs="Herculean Trousers",
 		feet=gear.tp_feet,
 		neck="Fotia Gorget",
@@ -198,7 +198,7 @@ function init_gear_sets()
 		ammo="Aqreqaq Bomblet",
 		head=gear.physical_head,
 		body="Adhemar Jacket",
-		hands="Adhemar Wristbands",
+		hands="Adhemar Wristbands +1",
 		legs="Herculean Trousers",
 		feet=gear.tp_feet,
 		neck="Fotia Gorget",
@@ -214,7 +214,7 @@ function init_gear_sets()
 		ammo="Knobkierrie",
 		head="Lustratio Cap",
 		body="Adhemar Jacket",
-		hands="Adhemar Wristbands",
+		hands="Adhemar Wristbands +1",
 		legs="Samnuha Tights",
 		feet="Lustratio Leggings",
 		neck="Fotia Gorget",
@@ -231,7 +231,7 @@ function init_gear_sets()
 		ammo="Knobkierrie",
 		head="Lustratio Cap",
 		body="Adhemar Jacket",
-		hands="Adhemar Wristbands",
+		hands="Adhemar Wristbands +1",
 		legs="Meg. Chausses +2",
 		feet="Lustratio Leggings",
 		neck="Fotia Gorget",
@@ -417,7 +417,7 @@ function init_gear_sets()
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
 		ring2="Vocane Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		waist="Flume Belt +1"
 		}
 
@@ -441,7 +441,7 @@ function init_gear_sets()
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
 		ring2="Vocane Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		waist="Flume Belt +1"
 		}
 	
@@ -458,7 +458,7 @@ function init_gear_sets()
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
 		ring2="Vocane Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		waist="Engraved Belt"
 		}
 
@@ -475,7 +475,7 @@ function init_gear_sets()
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
 		ring2="Purity Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		waist="Engraved Belt"
 		}
 	
@@ -507,7 +507,7 @@ function init_gear_sets()
 		head="Dampening Tam",
 		body="Adhemar Jacket",
 		-- hands="Herculean Gloves",
-		hands="Adhemar Wristbands",
+		hands="Adhemar Wristbands +1",
 		legs="Samnuha Tights",
 		feet=gear.tp_feet,
 		-- neck="Anu Torque",
@@ -556,7 +556,7 @@ function init_gear_sets()
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
 		ring2="Vocane Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		waist="Engraved Belt"
 		}
 
@@ -573,7 +573,7 @@ function init_gear_sets()
 		ear2="Sherida Earring",
 		ring1="Defending Ring",
 		ring2="Vocane Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		-- waist="Ioskeha Belt",
 		waist="Windbuffet Belt +1"
 		}
@@ -591,7 +591,7 @@ function init_gear_sets()
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
 		ring2="Vocane Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		waist="Flume Belt +1"
 		}
 
@@ -608,7 +608,7 @@ function init_gear_sets()
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
 		ring2="Purity Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		waist="Engraved Belt"
 		}
 
@@ -625,7 +625,7 @@ function init_gear_sets()
 		ear2="Hearty Earring",
 		ring1="Defending Ring",
 		ring2="Purity Ring",
-		back=gear.parry_cape,
+		back=gear.pdt_cape,
 		waist="Engraved Belt"
 		}
 

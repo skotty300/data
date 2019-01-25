@@ -115,7 +115,7 @@ function init_gear_sets()
     sets.precast.WS = {
         head="Whirlpool Mask",neck=gear.ElementalGorget,ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Laksamana's Frac +3",hands="Leyline Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.LastStand_cape,waist="Fotia Belt",legs="Laksamana's Trews +2",feet="Adhemar Gamashes"}
+        back=gear.LastStand_cape,waist="Fotia Belt",legs="Laksamana's Trews +2",feet="Adhemar Gamashes +1"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Evisceration'] = sets.precast.WS

@@ -160,7 +160,7 @@ function init_gear_sets()
     
     sets.midcast.CureSelf = {ammo="Staunch Tathlum",
         head="Souveran Schaller",neck="Invidia Torque",ear1="Knightly earring",ear2="Nourishing Earring",
-        body="Souveran Cuirass",hands="Macabre Gauntlets +1",ring1="Vocane Ring",ring2="Meridian Ring",
+        body="Souveran Cuirass",hands="Macabre Gauntlets +1",ring1="Vocane Ring +1",ring2="Meridian Ring",
         back="Solemnity Cape",waist="Gishdubar Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
 
     sets.midcast['Enhancing Magic'] = {ammo="Staunch Tathlum",
@@ -196,17 +196,17 @@ function init_gear_sets()
     -- Idle sets
     -- sets.idle = {ammo="Ginsen",
         -- head="Baghere Salade",neck="Loricate Torque +1",ear1="Creed Earring",ear2="Cassie Earring",
-        -- body="Ares' Cuirass +1",hands="Souveran Handschuhs",ring1="Defending Ring",ring2="Vocane Ring",
+        -- body="Ares' Cuirass +1",hands="Souveran Handschuhs",ring1="Defending Ring",ring2="Vocane Ring +1",
         -- back="Moonbeam Cape",waist="Nierenschutz",legs="Carmine Cuisses +1",feet="Souveran Schuhs +1"}
 		
     sets.idle = {ammo="Staunch Tathlum",
         head="Souveran Schaller",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Odnowa Earring +1",
-        body="Reverence Surcoat +3",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Reverence Surcoat +3",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Nierenschutz",legs="Souveran Diechlings +1",feet="Souveran Schuhs +1"}
 
     sets.idle.Town = {ammo="Staunch Tathlum",
         head="Souveran Schaller",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Odnowa Earring +1",
-        body="Souveran Cuirass",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Souveran Cuirass",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Nierenschutz",legs="Carmine Cuisses +1",feet="Souveran Schuhs +1"}
     
     sets.idle.Weak = {ammo="Iron Gobbet",
@@ -239,7 +239,7 @@ function init_gear_sets()
     
     sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Souveran Schaller",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Odnowa Earring +1",
-        body="Reverence Surcoat +3",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Reverence Surcoat +3",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Nierenschutz",legs="Souveran Diechlings +1",feet="Souveran Schuhs +1"}
     sets.defense.HP = {ammo="Iron Gobbet",
         head="Reverence Coronet +1",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Odnowa Earring +1",
@@ -247,17 +247,17 @@ function init_gear_sets()
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souveran Diechlings +1",feet="Reverence Leggings +1"}
     sets.defense.Reraise = {ammo="Iron Gobbet",
         head="Twilight Helm",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Steelflash Earring",
-        body="Twilight Mail",hands="Reverence Gauntlets",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Twilight Mail",hands="Reverence Gauntlets",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Weard Mantle",waist="Nierenschutz",legs="Souveran Diechlings +1",feet="Reverence Leggings +1"}
     sets.defense.Charm = {ammo="Iron Gobbet",
         head="Reverence Coronet +1",neck="Lavalier +1",ear1="Odnowa Earring",ear2="Steelflash Earring",
-        body="Reverence Surcoat +3",hands="Reverence Gauntlets",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Reverence Surcoat +3",hands="Reverence Gauntlets",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Reverence Breeches +1",feet="Reverence Leggings +1"}
     -- To cap MDT with Shell IV (52/256), need 76/256 in gear.
     -- Shellra V can provide 75/256, which would need another 53/256 in gear.
     sets.defense.MDT = {ammo="Staunch Tathlum",
         head="Souveran Schaller",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-        body="Reverence Surcoat +3",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Reverence Surcoat +3",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Nierenschutz",legs="Souveran Diechlings +1",feet="Souveran Schuhs +1"}
 
 
@@ -287,7 +287,7 @@ function init_gear_sets()
 
     sets.engaged.PDT =  {ammo="Staunch Tathlum",
         head="Souveran Schaller",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Odnowa Earring +1",
-        body="Reverence Surcoat +3",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Reverence Surcoat +3",hands="Souveran Handschuhs +1",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Nierenschutz",legs="Souveran Diechlings +1",feet="Souveran Schuhs +1"}
 		
     sets.engaged.Acc.PDT = set_combine(sets.engaged.Acc, sets.engaged.PDT)

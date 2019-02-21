@@ -39,7 +39,7 @@ end
 -------------------------------------------------------------------------------------------------------------------
 
 function user_setup()
-	state.OffenseMode:options('Normal', 'HighAcc', 'MDT', 'DPS', 'PDT', 'MEva', 'Resist')
+	state.OffenseMode:options('Normal', 'HighAcc', 'MDT', 'DPS', 'PDT', 'MEva')
 	state.WeaponskillMode:options('Normal', 'Acc')
 	state.CastingMode:options('Normal', 'Resistant')
 	state.IdleMode:options('Normal', 'DT')
@@ -58,7 +58,7 @@ function user_setup()
 	gear.melee_cape = { name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}}
 	gear.fast_cape = { name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10','Damage taken-5%',}}
 	gear.phalanx_body = { name="Taeon Tabard", augments={'Accuracy+20','Spell interruption rate down -3%','Phalanx +3',}}
-	gear.phalanx_hands = { name="Taeon Gloves", augments={'Accuracy+24','"Triple Atk."+2','Phalanx +3',}}
+	gear.phalanx_hands = { name="Herculean Gloves", augments={'Rng.Acc.+2 Rng.Atk.+2','MND+8','Phalanx +4',}}
 	gear.phalanx_legs = { name="Herculean Trousers", augments={'INT+3','Pet: "Mag.Atk.Bns."+16','Phalanx +4','Accuracy+10 Attack+10','Mag. Acc.+10 "Mag.Atk.Bns."+10',}}
 	gear.phalanx_feet = { name="Taeon Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Phalanx +3',}}
 	
@@ -416,7 +416,7 @@ function init_gear_sets()
 		ear1="Etiolation Earring",
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Vocane Ring +1",
 		back=gear.pdt_cape,
 		waist="Flume Belt +1"
 		}
@@ -440,13 +440,13 @@ function init_gear_sets()
 		ear1="Etiolation Earring",
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Vocane Ring +1",
 		back=gear.pdt_cape,
 		waist="Flume Belt +1"
 		}
 	
 	sets.defense.MDT = {
-		sub="Utu Grip",
+		sub="Irenic Strap +1",
 		ammo="Staunch Tathlum",
 		head="Futhark Bandeau +3",
 		body="Futhark Coat +3",
@@ -457,13 +457,13 @@ function init_gear_sets()
 		ear1="Etiolation Earring",
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Vocane Ring +1",
 		back=gear.pdt_cape,
 		waist="Engraved Belt"
 		}
 
 	sets.defense.MEva = {
-		sub="Utu Grip",
+		sub="Irenic Strap +1",
 		ammo="Staunch Tathlum",
 		head="Turms Cap",
 		body="Runeist's Coat +3",
@@ -512,7 +512,7 @@ function init_gear_sets()
 		feet=gear.tp_feet,
 		-- neck="Anu Torque",
 		neck="Asperity Necklace",
-		-- ear1="Telos Earring",
+		ear1="Telos Earring",
 		ear1="Brutal Earring",
 		ear2="Sherida Earring",
 		ring1="Epona's Ring",
@@ -534,7 +534,7 @@ function init_gear_sets()
 		-- neck="Subtlety Spec.",
 		neck="Sanctity Necklace",
 		-- ear1="Telos Earring",
-		ear1="Brutal Earring",
+		ear1="Telos Earring",
 		ear2="Sherida Earring",
 		ring1="Regal Ring",
 		ring2="Niqmaddu Ring",
@@ -544,7 +544,7 @@ function init_gear_sets()
 		}
 
 	sets.engaged.MDT = {
-		sub="Utu Grip",
+		sub="Irenic Strap +1",
 		ammo="Staunch Tathlum",
 		head="Futhark Bandeau +3",
 		body="Futhark Coat +3",
@@ -555,7 +555,7 @@ function init_gear_sets()
 		ear1="Etiolation Earring",
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Vocane Ring +1",
 		back=gear.pdt_cape,
 		waist="Engraved Belt"
 		}
@@ -569,10 +569,10 @@ function init_gear_sets()
 		legs="Erilaz Leg Guards +1",
 		feet=gear.tp_feet,
 		neck="Loricate Torque +1",
-		ear1="Brutal Earring",
+		ear1="Telos Earring",
 		ear2="Sherida Earring",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Vocane Ring +1",
 		back=gear.pdt_cape,
 		-- waist="Ioskeha Belt",
 		waist="Windbuffet Belt +1"
@@ -590,13 +590,13 @@ function init_gear_sets()
 		ear1="Etiolation Earring",
 		ear2="Odnowa Earring +1",
 		ring1="Defending Ring",
-		ring2="Vocane Ring",
+		ring2="Vocane Ring +1",
 		back=gear.pdt_cape,
 		waist="Flume Belt +1"
 		}
 
 	sets.engaged.MEva = {
-		sub="Utu Grip",
+		sub="Irenic Strap +1",
 		ammo="Staunch Tathlum",
 		head="Turms Cap",
 		body="Runeist's Coat +3",

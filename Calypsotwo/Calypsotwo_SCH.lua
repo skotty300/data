@@ -28,7 +28,7 @@ function get_sets()
 	    left_ear="Etiolation Earring",
 	    right_ear="Static Earring",
         left_ring="Defending Ring",
-	    right_ring="Vocane Ring",
+	    right_ring="Vocane Ring +1",
         back="Lugh's Cape",
 	} -- end sets.idle
 
@@ -54,7 +54,7 @@ function get_sets()
 	    left_ear="Etiolation Earring",
 	    right_ear="Static Earring",
         left_ring="Defending Ring",
-	    right_ring="Vocane Ring",
+	    right_ring="Vocane Ring +1",
         back="Solemnity Cape",
 	} -- end sets.melee
 

@@ -33,15 +33,17 @@ function get_sets()
 	-- Idle set
 	----------------------------------------------------------------------
 	-- Initializes an array to begin storing set data
-	sets.idle = {}
+	sets.idle = {Default}
 
 	-- idle : Default
 	sets.idle.default = {
-	ammo="Seething Bomblet +1",
-	--head="Sulevia's Mask +2",
+	ammo="Staunch Tathlum +1",
+	head="Sulevia's Mask +2",
     body="Lugra Cloak +1",
+	--body="Sulevia's Plate. +2",
     hands="Sulevia's Gauntlets +2",
     legs="Carmine Cuisses +1",
+	--legs="Sulevi. Cuisses +1",
     feet="Sulev. Leggings +2",
     neck="Loricate torque",
     waist="Flume Belt",
@@ -66,8 +68,8 @@ function get_sets()
     hands="Emi. Gauntlets +1",
     legs={ name="Argosy Breeches +1", augments={'STR+12','DEX+12','Attack+20',}},
     feet="Flam. Gambieras +2",
-    neck="Abyssal Beads +1",
-    waist="Ioskeha Belt",
+    neck="Abyssal Beads +2",
+    waist="Ioskeha Belt +1",
     left_ear="Brutal Earring",
     right_ear="Cessance Earring",
     left_ring="Petrov Ring",
@@ -92,8 +94,8 @@ function get_sets()
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Brutal Earring",
-    right_ear="Ishvara Earring",
-    left_ring="Regal Ring",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    left_ring="Epaminondas's Ring",
     right_ring="Niqmaddu Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 	} -- end sets.ws.default
@@ -111,8 +113,8 @@ function get_sets()
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Brutal Earring",
-    right_ear="Ishvara Earring",
-    left_ring="Regal Ring",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    left_ring="Epaminondas's Ring",
     right_ring="Niqmaddu Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%',}},
 	} -- end sets.ws['Catastrophe'] 
@@ -128,9 +130,9 @@ function get_sets()
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Brutal Earring",
-    right_ear="Ishvara Earring",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     left_ring="Niqmaddu Ring",
-    right_ring="Regal Ring",
+    right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%',}},
 	} -- end sets.ws['Cross Reaper'] 
 	
@@ -145,9 +147,9 @@ function get_sets()
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Brutal Earring",
-    right_ear="Ishvara Earring",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     left_ring="Niqmaddu Ring",
-    right_ring="Regal Ring",
+    right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%',}},
 	} -- end sets.ws['Quietus'] 
 	
@@ -162,9 +164,9 @@ function get_sets()
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Brutal Earring",
-    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     left_ring="Niqmaddu Ring",
-    right_ring="Regal Ring",
+    right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 	} -- end sets.ws['Insurgency'] 
 	
@@ -179,9 +181,9 @@ function get_sets()
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Brutal Earring",
-    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     left_ring="Shiva Ring",
-    right_ring="Regal Ring",
+    right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 	} -- end sets.ws['Entropy'] 
 	
@@ -194,8 +196,8 @@ function get_sets()
     legs={ name="Argosy Breeches +1", augments={'STR+12','DEX+12','Attack+20',}},
     feet={ name="Argosy Sollerets +1", augments={'STR+12','DEX+12','Attack+20',}},
     neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    waist="Ioskeha Belt +1",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Brutal Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Regal Ring",
@@ -212,10 +214,10 @@ function get_sets()
     feet="Sulev. Leggings +2",
     neck="Fotia Gorget",
     waist="Fotia Belt",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
-    right_ring="Regal Ring",
+    right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%',}},
 	} -- end sets.ws['Torcleaver'] 
 	

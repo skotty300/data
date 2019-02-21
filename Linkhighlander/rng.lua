@@ -31,8 +31,8 @@ function user_setup()
 	gear.default.weaponskill_neck = "Fotia Gorget"
 	gear.default.weaponskill_waist = "Fotia Belt"
 	
-	DefaultAmmo = {['Yoichinoyumi'] = "Achiyalabopa arrow", ['Annihilator'] = "Eradicating bullet"}
-	U_Shot_Ammo = {['Yoichinoyumi'] = "Achiyalabopa arrow", ['Annihilator'] = "Eradicating bullet"}
+	DefaultAmmo = {['Yoichinoyumi'] = "Achiyalabopa arrow", ['Fomalhaut'] = "Chrono Bullet"}
+	U_Shot_Ammo = {['Yoichinoyumi'] = "Achiyalabopa arrow", ['Fomalhaut'] = "Chrono Bullet"}
 
 	select_default_macro_book()
 
@@ -55,9 +55,24 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Bounty Shot'] = {}
-	sets.precast.JA['Eagle Eye Shot'] = {legs= "Arcadian Braccae"}
-	sets.precast.JA['Camouflage'] = {body= "Orion Jerkin +1"}
+	sets.precast.JA['Bounty Shot'] = {hands="Amini Glove. +1",}
+	sets.precast.JA['Eagle Eye Shot'] = {
+		head={ name="Arcadian Beret +3", augments={'Enhances "Recycle" effect',}},
+        body="Nisroch Jerkin",
+        hands={ name="Adhemar Wrist. +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
+        legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
+		feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
+		--feet={ name="Adhemar Gamashes", augments={'HP+50','"Store TP"+6','"Snapshot"+8',}},
+        neck="Iskur Gorget",
+        waist="Yemaya Belt",
+		left_ear="Telos Earring",
+		right_ear="Enervating Earring",
+		--right_ear="Dedition Earring",
+        left_ring="Regal Ring",
+        right_ring="Ilabrat Ring", 
+        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+		}
+	sets.precast.JA['Camouflage'] = {body= "Orion Jerkin +2"}
 	sets.precast.JA['Scavenge'] = {feet="Hunter's Socks"}
 	sets.precast.JA['Shadowbind'] = {hands= "Orion Bracers +2"}
 	sets.precast.JA['Sharpshot'] = {legs= "Orion Braccae +1"}
@@ -84,8 +99,8 @@ function init_gear_sets()
 	sets.precast.RA = {
 		head={ name="Taeon Chapeau", augments={'"Snapshot"+5','"Snapshot"+5',}},
 		body="Oshosi Vest",
-		hands={ name="Carmine Fin. Ga.", augments={'Rng.Atk.+15','"Mag.Atk.Bns."+10','"Store TP"+5',}},
-		legs="Oshosi Trousers",
+		hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+		legs={ name="Adhemar Kecks +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
 		feet="Meg. Jam. +2",
 		neck="Iskur Gorget",
 		waist="Yemaya Belt",
@@ -104,62 +119,65 @@ function init_gear_sets()
 		head="Orion Beret +3",
 		body={ name="Arc. Jerkin +3", augments={'Enhances "Snapshot" effect',}},
 		hands="Meg. Gloves +2",
-		legs="Oshosi Trousers",
-		feet="Meg. Jam. +2",
+		legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
+		feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Telos Earring",
 		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		left_ring="Dingir Ring",
-		right_ring="Ilabrat Ring",
+		left_ring="Regal Ring",
+		right_ring="Dingir Ring", 
 		back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 }
 
 	sets.precast.WS["Jishnu's Radiance"] = {
-		head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		head={ name="Herculean Helm", augments={'Rng.Atk.+21','Crit.hit rate+3','STR+9','Rng.Acc.+8',}},
 		body="Nisroch Jerkin",
 		hands="Kobo Kote",
 		legs="Jokushu Haidate",
-		feet="Oshosi Leggings",
+		feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Sherida Earring",
 		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		left_ring="Begrudging Ring",
-		right_ring="Ilabrat Ring",
+		left_ring="Regal Ring",
+		right_ring="Begrudging Ring", 
 		back={ name="Belenus's Cape", augments={'DEX+20','Rng.Acc.+20 Rng.Atk.+20','Crit.hit rate+10',}},
 }
 	sets.precast.WS['Trueflight'] = {
 		head="Orion Beret +3",
 		body={ name="Samnuha Coat", augments={'Mag. Acc.+14','"Mag.Atk.Bns."+13','"Fast Cast"+4','"Dual Wield"+3',}},
-		hands={ name="Carmine Fin. Ga.", augments={'Rng.Atk.+15','"Mag.Atk.Bns."+10','"Store TP"+5',}},
-		legs="Mummu Kecks +2",
-		feet={ name="Adhemar Gamashes", augments={'HP+50','"Store TP"+6','"Snapshot"+8',}},
-		neck="Fotia Gorget",
-		waist="Fotia Belt",
+		hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+		legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
+		feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+10','Weapon skill damage +5%','STR+6','Mag. Acc.+10',}},
+		neck="Sanctity Necklace",
+		waist="Hachirin-no-Obi",
+		--waist="Eschan Stone",
 		left_ear="Friomisi Earring",
-		right_ear="Hecate's Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		left_ring="Dingir Ring",
-		right_ring="Ilabrat Ring",
+		right_ring="Weather. Ring",
 		back={ name="Belenus's Cape", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 }
 	
 	sets.precast.WS['Wildfire'] = {
 		head="Orion Beret +3",
 		body={ name="Samnuha Coat", augments={'Mag. Acc.+14','"Mag.Atk.Bns."+13','"Fast Cast"+4','"Dual Wield"+3',}},
-		hands={ name="Carmine Fin. Ga.", augments={'Rng.Atk.+15','"Mag.Atk.Bns."+10','"Store TP"+5',}},
-		legs="Mummu Kecks +2",
-		feet={ name="Adhemar Gamashes", augments={'HP+50','"Store TP"+6','"Snapshot"+8',}},
-		neck="Fotia Gorget",
-		waist="Fotia Belt",
+		hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+		legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
+		feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+10','Weapon skill damage +5%','STR+6','Mag. Acc.+10',}},
+		neck="Sanctity Necklace",
+		waist="Eschan Stone",
 		left_ear="Friomisi Earring",
-		right_ear="Hecate's Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		left_ring="Dingir Ring",
-		right_ring="Ilabrat Ring",
+		right_ring="Regal Ring",
 		back={ name="Belenus's Cape", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 }
-	sets.precast.WS.Acc = {body="Meg. Cuirie +2",ring1="Hajduk Ring +1",
-		back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},legs="Meg. Chausses +2"}
+	sets.precast.WS.Acc = {
+		back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+		legs="Meg. Chausses +2"
+		}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 
@@ -178,6 +196,7 @@ function init_gear_sets()
 		left_ear="Loquac. Earring",
 		right_ear="Etiolation Earring",
 		left_ring="Prolix Ring",
+		right_ring="Weather. Ring",
 	}
 
 	sets.midcast.Utsusemi = {
@@ -188,25 +207,26 @@ function init_gear_sets()
 		left_ear="Loquac. Earring",
 		right_ear="Etiolation Earring",
 		left_ring="Prolix Ring",
+		right_ring="Weather. Ring",
 		}
 
 	-- Ranged sets
 	
 	sets.midcast.RA = {
-	    head={ name="Arcadian Beret +2", augments={'Enhances "Recycle" effect',}},
+	    head={ name="Arcadian Beret +3", augments={'Enhances "Recycle" effect',}},
         body="Nisroch Jerkin",
-        hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-        legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-		feet="Meg. Jam. +2",
+        hands={ name="Adhemar Wrist. +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
+        legs={ name="Adhemar Kecks +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
+		feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
 		--feet={ name="Adhemar Gamashes", augments={'HP+50','"Store TP"+6','"Snapshot"+8',}},
         neck="Iskur Gorget",
         waist="Yemaya Belt",
 		left_ear="Telos Earring",
 		right_ear="Enervating Earring",
 		--right_ear="Dedition Earring",
-        left_ring="Ilabrat Ring",
-        right_ring="Petrov Ring",
-        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}},
+        left_ring="Regal Ring",
+        right_ring="Ilabrat Ring", 
+        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 	}
 	
 	sets.midcast.DoubleShot = {
@@ -221,22 +241,22 @@ function init_gear_sets()
         right_ear="Enervating Earring",
         left_ring="Ilabrat Ring",
         right_ring="Dingir Ring",
-        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}},
+        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 	}
 	
 	sets.midcast.RA.Acc = {
-		head={ name="Arcadian Beret +2", augments={'Enhances "Recycle" effect',}},
-		body="Meg. Cuirie +2",
-		hands="Meg. Gloves +2",
+		head={ name="Arcadian Beret +3", augments={'Enhances "Recycle" effect',}},
+		body="Orion Jerkin +2",
+		hands="Orion Bracers +2",
 		legs="Meg. Chausses +2",
-		feet="Meg. Jam. +2",
+		feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
 		neck="Iskur Gorget",
 		waist="Yemaya Belt",
 		left_ear="Enervating Earring",
 		right_ear="Telos Earring",
-		left_ring="Dingir Ring",
-		right_ring="Ilabrat Ring",
-		back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}},
+		left_ring="Regal Ring", 
+		right_ring="Dingir Ring", 
+		back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 	}
 
 	sets.midcast.RA.Annihilator = set_combine(sets.midcast.RA)
@@ -270,9 +290,9 @@ function init_gear_sets()
         left_ear="Telos Earring",
         right_ear="Enervating Earring",
 	    left_ring="Defending Ring",
-	    right_ring="Vocane Ring",
-	    --back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}},
-		back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','CHR+1','Accuracy+2','DEF+8',}},
+	    right_ring="Warden's Ring",
+	    back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+		--back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','CHR+1','Accuracy+2','DEF+8',}},
 	}
 	
 	-- Defense sets
@@ -287,9 +307,9 @@ function init_gear_sets()
         left_ear="Telos Earring",
         right_ear="Enervating Earring",
 	    left_ring="Defending Ring",
-	    right_ring="Vocane Ring",
-	    --back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}},
-		back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','CHR+1','Accuracy+2','DEF+8',}},
+	    right_ring="Warden's Ring",
+	    back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+		--back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','CHR+1','Accuracy+2','DEF+8',}},
 		}
 
 	sets.defense.MDT = {
@@ -303,9 +323,9 @@ function init_gear_sets()
         left_ear="Telos Earring",
         right_ear="Enervating Earring",
 	    left_ring="Defending Ring",
-	    right_ring="Vocane Ring",
-	    --back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}},
-		back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','CHR+1','Accuracy+2','DEF+8',}},
+	    right_ring="Warden's Ring",
+	    back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+		--back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','CHR+1','Accuracy+2','DEF+8',}},
 		}
 
 	sets.Kiting = {legs="Carmine Cuisses +1"}
@@ -316,35 +336,36 @@ function init_gear_sets()
 	--------------------------------------
 
 	sets.engaged = {
-        head={ name="Arcadian Beret +2", augments={'Enhances "Recycle" effect',}},
-        body="Meg. Cuirie +2",
-        hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+        head="Mummu Bonnet +2",
+        body="Mummu Jacket +2",
+        hands="Mummu Wrists +2",
         legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-        feet={ name="Herculean Boots", augments={'Accuracy+21 Attack+21','"Triple Atk."+1','STR+9','Accuracy+9','Attack+14',}},
-        neck="Iskur Gorget",
-        waist="Hurch'lan Sash",
-        left_ear="Brutal Earring",
-        left_ear="Telos Earring",
-        left_ring="Ilabrat Ring",
-        right_ring="Rajas Ring",
-        back="Lupine Cape",
+        feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
+        neck="Sanctity Necklace",
+        waist="Eschan Stone",
+		left_ear="Telos Earring",
+        right_ear="Sherida Earring",
+        left_ring="Regal Ring",
+        right_ring="Ilabrat Ring",
+        back="Agema Cape",
+		--back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','CHR+1','Accuracy+2','DEF+8',}},
 	}
 
 
 
 	sets.engaged.Acc = {
-        head={ name="Arcadian Beret +2", augments={'Enhances "Recycle" effect',}},
+        head={ name="Arcadian Beret +3", augments={'Enhances "Recycle" effect',}},
         body="Meg. Cuirie +2",
         hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
         legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-        feet={ name="Herculean Boots", augments={'Accuracy+21 Attack+21','"Triple Atk."+1','STR+9','Accuracy+9','Attack+14',}},
+        feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
         neck="Iskur Gorget",
         waist="Hurch'lan Sash",
         left_ear="Brutal Earring",
         left_ear="Telos Earring",
-        left_ring="Ilabrat Ring",
-        right_ring="Rajas Ring",
-        back="Lupine Cape",
+        left_ring="Regal Ring",
+        right_ring="Ilabrat Ring", 
+        back="Agema Cape",
 	}
 
 	--------------------------------------
@@ -352,18 +373,18 @@ function init_gear_sets()
 	--------------------------------------
 
 	sets.buff.Barrage = {
-	 	head="Meghanada Visor +2",
-        body="Meg. Cuirie +2",
+	 	head="Orion Beret +3",
+        body="Nisroch Jerkin",
         hands="Orion Bracers +2",
         legs="Meg. Chausses +2",
-		feet="Meg. Jam. +2",
+		feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
         neck="Iskur Gorget",
         waist="Yemaya Belt",
         left_ear="Telos Earring",
         right_ear="Enervating Earring",
-        left_ring="Ilabrat Ring",
+        left_ring="Regal Ring",
         right_ring="Dingir Ring",
-        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}},
+        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 	}
 	sets.buff.Camouflage = {
 		body="Orion Jerkin +2",
@@ -381,7 +402,7 @@ function init_gear_sets()
         right_ear="Enervating Earring",
         left_ring="Ilabrat Ring",
         right_ring="Dingir Ring",
-        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}},
+        back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 	}
 end
 

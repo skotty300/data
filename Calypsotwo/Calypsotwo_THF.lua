@@ -79,7 +79,7 @@ function init_gear_sets()
     --------------------------------------
 
     sets.TreasureHunter = {head="Turms Cap",body="Emet Harness +1",hands="Plunderer's Armlets +1",
-		back=gear.tp_back,waist="Chaac Belt",ring2="Defending Ring",ring1="Vocane Ring",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
+		back=gear.tp_back,waist="Chaac Belt",ring2="Defending Ring",ring1="Vocane Ring +1",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
     sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
 
@@ -240,17 +240,17 @@ function init_gear_sets()
 
     sets.idle = {ammo="Yetshila",
         head="Turms Cap",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Sherida Earring",
-        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Skadi's Jambeaux +1"}
 
     sets.idle.Town = {main="Izhiikoh", sub="Sabebus",ammo="Yetshila",
         head="Turms Cap",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Sherida Earring",
-        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Patentia Sash",legs="Mummu Kecks +2",feet="Skadi's Jambeaux +1"}
 
     sets.idle.Weak = {ammo="Yetshila",
         head="Pillager's Bonnet +1",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Sherida Earring",
-        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Skadi's Jambeaux +1"}
 
 

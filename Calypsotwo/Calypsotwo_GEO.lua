@@ -277,14 +277,14 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {main="Boonwell Staff",sub="Mephitis Grip",
         head="Orvail Corona +1",neck="Loricate Torque +1",
-        body="Jhakri Robe +2",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Jhakri Robe +2",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring +1",
         waist="Austerity Belt",legs="Assiduity pants +1",feet="Chelona Boots"
 	}
 
     -- Idle sets
     sets.idle = {sub="Genmei Shield",range="Dunna",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-        body="Jhakri Robe +2",hands="Bagua Mitaines +3",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Jhakri Robe +2",hands="Bagua Mitaines +3",ring1="Defending Ring",ring2="Vocane Ring +1",
     	back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assiduity pants +1",feet="Geomancy Sandals +3"
     }
 	
@@ -333,7 +333,7 @@ function init_gear_sets()
         head="Welkin Crown",
         neck="Loricate Torque +1",
         ring1="Defending Ring",
-        ring2="Vocane Ring",
+        ring2="Vocane Ring +1",
         waist="Refoccilation Stone",
         legs="Geomancy Pants +2"
     })
@@ -349,7 +349,7 @@ function init_gear_sets()
         body="Jhakri Robe +2",
         hands="Geomancy Mitaines +3",
         ring1="Defending Ring",
-        ring2="Vocane Ring",
+        ring2="Vocane Ring +1",
         back="Moonbeam Cape",
         feet="Azimuth Gaiters +1"
     }
@@ -360,7 +360,7 @@ function init_gear_sets()
         ear2="Etiolation Earring",
         body="Jhakri Robe +2",
         ring1="Defending Ring",
-        ring2="Vocane Ring",
+        ring2="Vocane Ring +1",
         back="Moonbeam Cape"
         --legs="Bokwus Slops",
     }

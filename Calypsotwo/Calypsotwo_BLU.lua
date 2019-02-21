@@ -198,6 +198,7 @@ function user_setup()
 	gear.melee_cape = { name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 	gear.magic_cape = { name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}}
 	--gear.tp_feet = { name="Herculean Boots", augments={'"Triple Atk."+4','Accuracy+10','Attack+1',}}
+    gear.melee_hands = { name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}}
 	gear.tp_feet = { name="Herculean Boots", augments={'Attack+15','INT+7','Quadruple Attack +3','Accuracy+11 Attack+11',}}
 
     update_combat_form()
@@ -257,7 +258,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         head="Adhemar Bonnet",neck=gear.ElementalGorget,ear1="Moonshade Earring",ear2="Brutal Earring",
-        body="Adhemar Jacket",hands="Adhemar Wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Rajas Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes +1"}
     
     sets.precast.WS.acc = set_combine(sets.precast.WS, {hands="Buremte Gloves"})
@@ -285,7 +286,7 @@ function init_gear_sets()
 		
     sets.precast.WS['Chant du Cygne'] = {ammo="Jukukik Feather",
         head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-        body="Abnoba Kaftan",hands="Adhemar Wristbands +1",ring1="Begrudging Ring",ring2="Epona's Ring",
+        body="Abnoba Kaftan",hands=gear.melee_hands,ring1="Begrudging Ring",ring2="Epona's Ring",
         back=gear.cdc_cape,waist="Fotia Belt",legs="Herculean Trousers",feet="Thereoid Greaves"}
     
     -- Midcast Sets
@@ -300,7 +301,7 @@ function init_gear_sets()
     
     sets.midcast['Blue Magic'].Physical = {ammo="Floestone",
         head=gear.physical_head,neck="Caro Necklace",ear1="Heartseeker Earring",ear2="Steelflash Earring",
-        body=gear.cdc_body,hands="Adhemar Wristbands +1",ring1="Rajas Ring",ring2="Ifrit Ring",
+        body=gear.cdc_body,hands=gear.melee_hands,ring1="Rajas Ring",ring2="Ifrit Ring",
         back=gear.savage_cape,waist="Caudata Belt",legs="Herculean Trousers",feet=gear.tp_feet}
 
     sets.midcast['Blue Magic'].PhysicalAcc = set_combine(sets.midcast['Blue Magic'].Physical,
@@ -396,23 +397,23 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {
         head="Ocelomeh Headpiece +1",neck="Loricate Torque +1",
-        body="Jhakri Robe +2",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Jhakri Robe +2",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring +1",
         waist="Austerity Belt",feet="Chelona Boots +1"}
     
     -- Idle sets
     sets.idle = {ammo="Staunch Tathlum",
         head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Jhakri Robe +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Jhakri Robe +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Adhemar Gamashes +1"}
 
     sets.idle.PDT = {ammo="Staunch Tathlum",
         head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Emet Harness +1",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Emet Harness +1",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Iuitl Gaiters +1"}
 
     sets.idle.Town = {ammo="Staunch Tathlum",
         head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Jhakri Robe +2",hands="Assimilator's Bazubands +2",ring1="Sheltered Ring",ring2="Vocane Ring",
+        body="Jhakri Robe +2",hands="Assimilator's Bazubands +2",ring1="Sheltered Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Adhemar Gamashes +1"}
 
     sets.idle.Learning = set_combine(sets.idle, sets.Learning)
@@ -420,12 +421,12 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Whirlpool Mask",neck="Loricate Torque +1",
-        body="Ayanmo Corazza +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Ayanmo Corazza +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Ayanmo Cosciales +2",feet="Iuitl Gaiters +1"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
         head="Whirlpool Mask",neck="Loricate Torque +1",
-        body="Hagondes Coat",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Hagondes Coat",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Engulfer Cape",waist="Flume Belt",legs="Nahtirah Trousers",feet="Iuitl Gaiters +1"}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
@@ -440,7 +441,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Adhemar Jacket",hands="Adhemar Wristbands +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Hetairoi Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
 
     sets.engaged.Acc = {ammo="Honed Tathlum",
@@ -455,27 +456,27 @@ function init_gear_sets()
 		
     sets.engaged.PDT = {ammo="Staunch Tathlum",
         head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Ayanmo Corazza +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Ayanmo Corazza +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Ayanmo Cosciales +2",feet="Iuitl Gaiters +1"}
 
     sets.engaged.DW = {ammo="Ginsen",
-        head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
-        body="Adhemar Jacket",hands="Adhemar Wristbands +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
+        head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Dedition Earring",
+        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
 
     sets.engaged.DW.Acc = {ammo="Honed Tathlum",
-        head="Carmine Mask",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
-        body="Assimilator's Jubbah +2",hands="Assimilator's Bazubands +2",ring1="Patricius Ring",ring2="Mars's Ring",
-        back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.tp_feet}
+        head="Dampening Tam",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Telos Earring",
+        body="Adhemar Jacket",hands="Assimilator's Bazubands +2",ring1="Petrov Ring",ring2="Epona's Ring",
+        back=gear.melee_cape,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet=gear.tp_feet}
 
     sets.engaged.DW.Refresh = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
-        body="Jhakri Robe +2",hands="Adhemar Wristbands +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
+        body="Jhakri Robe +2",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
 		
     sets.engaged.DW.PDT = {ammo="Staunch Tathlum",
         head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
-        body="Ayanmo Corazza +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Ayanmo Corazza +2",hands="Assimilator's Bazubands +2",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt",legs="Ayanmo Cosciales +2",feet="Iuitl Gaiters +1"}
 
     sets.engaged.Learning = set_combine(sets.engaged, sets.Learning)

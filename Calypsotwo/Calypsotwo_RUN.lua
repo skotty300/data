@@ -181,7 +181,7 @@ function init_gear_sets()
 	sets.precast.WS = {
 		ammo="Aqreqaq Bomblet",
 		head=gear.physical_head,
-		body="Adhemar Jacket",
+		body="Adhemar Jacket +1",
 		hands="Adhemar Wristbands +1",
 		legs="Herculean Trousers",
 		feet=gear.tp_feet,
@@ -197,7 +197,7 @@ function init_gear_sets()
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {
 		ammo="Aqreqaq Bomblet",
 		head=gear.physical_head,
-		body="Adhemar Jacket",
+		body="Adhemar Jacket +1",
 		hands="Adhemar Wristbands +1",
 		legs="Herculean Trousers",
 		feet=gear.tp_feet,
@@ -213,7 +213,7 @@ function init_gear_sets()
 	sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {
 		ammo="Knobkierrie",
 		head="Lustratio Cap",
-		body="Adhemar Jacket",
+		body="Adhemar Jacket +1",
 		hands="Adhemar Wristbands +1",
 		legs="Samnuha Tights",
 		feet="Lustratio Leggings",
@@ -221,8 +221,7 @@ function init_gear_sets()
 		ear1="Moonshade Earring",
 		ear2="Sherida Earring",
 		ring1="Regal Ring",
-		-- ring2="Niqmaddu Ring",
-		ring2="Epona's Ring",
+		ring2="Niqmaddu Ring",
 		back=gear.melee_cape,
 		waist="Fotia Belt"
 		})
@@ -230,16 +229,15 @@ function init_gear_sets()
 	sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS['Resolution'], {
 		ammo="Knobkierrie",
 		head="Lustratio Cap",
-		body="Adhemar Jacket",
+		body="Adhemar Jacket +1",
 		hands="Adhemar Wristbands +1",
 		legs="Meg. Chausses +2",
 		feet="Lustratio Leggings",
 		neck="Fotia Gorget",
 		ear1="Moonshade Earring",
 		ear2="Sherida Earring",
-		ring1="Hetairoi Ring",
-		-- ring2="Niqmaddu Ring",
-		ring2="Ilabrat Ring",
+		ring1="Epona's Ring",
+		ring2="Niqmaddu Ring",
 		back=gear.melee_cape,
 		waist="Fotia Belt"
 		})
@@ -505,7 +503,7 @@ function init_gear_sets()
 		ammo="Ginsen",
 		-- head=gear.physical_head,
 		head="Dampening Tam",
-		body="Adhemar Jacket",
+		body="Adhemar Jacket +1",
 		-- hands="Herculean Gloves",
 		hands="Adhemar Wristbands +1",
 		legs="Samnuha Tights",
@@ -516,8 +514,7 @@ function init_gear_sets()
 		ear1="Brutal Earring",
 		ear2="Sherida Earring",
 		ring1="Epona's Ring",
-		-- ring1="Niqmaddu Ring",
-		ring2="Ilabrat Ring",
+		ring2="Niqmaddu Ring",
 		back=gear.melee_cape,
 		-- waist="Ioskeha Belt",
 		waist="Windbuffet Belt +1"
@@ -572,7 +569,7 @@ function init_gear_sets()
 		ear1="Telos Earring",
 		ear2="Sherida Earring",
 		ring1="Defending Ring",
-		ring2="Vocane Ring +1",
+		ring2="Niqmaddu Ring",
 		back=gear.pdt_cape,
 		-- waist="Ioskeha Belt",
 		waist="Windbuffet Belt +1"
@@ -606,23 +603,6 @@ function init_gear_sets()
 		neck="Warder's Charm +1",
 		ear1="Sanare Earring",
 		ear2="Odnowa Earring +1",
-		ring1="Defending Ring",
-		ring2="Purity Ring",
-		back=gear.pdt_cape,
-		waist="Engraved Belt"
-		}
-
-	sets.engaged.Resist = {
-		sub="Utu Grip",
-		ammo="Staunch Tathlum",
-		head="Turms Cap",
-		body="Runeist's Coat +3",
-		hands="Meghanada Gloves +2",
-		legs="Runiest's Trousers +2",
-		feet="Turms Leggings",
-		neck="Moonbeam Necklace",
-		ear1="Sanare Earring",
-		ear2="Hearty Earring",
 		ring1="Defending Ring",
 		ring2="Purity Ring",
 		back=gear.pdt_cape,

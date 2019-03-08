@@ -305,7 +305,7 @@ function init_gear_sets()
         back=gear.savage_cape,waist="Caudata Belt",legs="Herculean Trousers",feet=gear.tp_feet}
 
     sets.midcast['Blue Magic'].PhysicalAcc = set_combine(sets.midcast['Blue Magic'].Physical,
-		{ammo="Jukukik Feather",body="Ayanmo Corazza +2",ring2="Patricius Ring"})
+		{ammo="Jukukik Feather",body="Ayanmo Corazza +2",ring2="Chirich Ring"})
 
     sets.midcast['Blue Magic'].PhysicalStr = sets.midcast['Blue Magic'].Physical
 
@@ -441,12 +441,12 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Hetairoi Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Hetairoi Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
 
     sets.engaged.Acc = {ammo="Honed Tathlum",
         head="Carmine Mask",neck="Sanctity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Assimilator's Jubbah +2",hands="Assimilator's Bazubands +2",ring1="Patricius Ring",ring2="Mars's Ring",
+        body="Assimilator's Jubbah +2",hands="Assimilator's Bazubands +2",ring1="Chirich Ring",ring2="Mars's Ring",
         back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.tp_feet}
 
     sets.engaged.Refresh = {ammo="Ginsen",
@@ -461,12 +461,12 @@ function init_gear_sets()
 
     sets.engaged.DW = {ammo="Ginsen",
         head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Dedition Earring",
-        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
 
     sets.engaged.DW.Acc = {ammo="Honed Tathlum",
         head="Dampening Tam",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Telos Earring",
-        body="Adhemar Jacket",hands="Assimilator's Bazubands +2",ring1="Petrov Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket +1",hands="Assimilator's Bazubands +2",ring1="Petrov Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet=gear.tp_feet}
 
     sets.engaged.DW.Refresh = {ammo="Ginsen",

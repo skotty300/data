@@ -181,7 +181,11 @@ function init_gear_sets()
 	sets.precast.WS = {
 		ammo="Aqreqaq Bomblet",
 		head=gear.physical_head,
+<<<<<<< HEAD
 		body="Adhemar Jacket +1",
+=======
+		body="Adhemar Jacket",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		hands="Adhemar Wristbands +1",
 		legs="Herculean Trousers",
 		feet=gear.tp_feet,
@@ -197,7 +201,11 @@ function init_gear_sets()
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {
 		ammo="Aqreqaq Bomblet",
 		head=gear.physical_head,
+<<<<<<< HEAD
 		body="Adhemar Jacket +1",
+=======
+		body="Adhemar Jacket",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		hands="Adhemar Wristbands +1",
 		legs="Herculean Trousers",
 		feet=gear.tp_feet,
@@ -213,7 +221,11 @@ function init_gear_sets()
 	sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {
 		ammo="Knobkierrie",
 		head="Lustratio Cap",
+<<<<<<< HEAD
 		body="Adhemar Jacket +1",
+=======
+		body="Adhemar Jacket",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		hands="Adhemar Wristbands +1",
 		legs="Samnuha Tights",
 		feet="Lustratio Leggings",
@@ -221,7 +233,12 @@ function init_gear_sets()
 		ear1="Moonshade Earring",
 		ear2="Sherida Earring",
 		ring1="Regal Ring",
+<<<<<<< HEAD
 		ring2="Niqmaddu Ring",
+=======
+		-- ring2="Niqmaddu Ring",
+		ring2="Epona's Ring",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		back=gear.melee_cape,
 		waist="Fotia Belt"
 		})
@@ -229,15 +246,25 @@ function init_gear_sets()
 	sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS['Resolution'], {
 		ammo="Knobkierrie",
 		head="Lustratio Cap",
+<<<<<<< HEAD
 		body="Adhemar Jacket +1",
+=======
+		body="Adhemar Jacket",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		hands="Adhemar Wristbands +1",
 		legs="Meg. Chausses +2",
 		feet="Lustratio Leggings",
 		neck="Fotia Gorget",
 		ear1="Moonshade Earring",
 		ear2="Sherida Earring",
+<<<<<<< HEAD
 		ring1="Epona's Ring",
 		ring2="Niqmaddu Ring",
+=======
+		ring1="Hetairoi Ring",
+		-- ring2="Niqmaddu Ring",
+		ring2="Ilabrat Ring",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		back=gear.melee_cape,
 		waist="Fotia Belt"
 		})
@@ -503,7 +530,11 @@ function init_gear_sets()
 		ammo="Ginsen",
 		-- head=gear.physical_head,
 		head="Dampening Tam",
+<<<<<<< HEAD
 		body="Adhemar Jacket +1",
+=======
+		body="Adhemar Jacket",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		-- hands="Herculean Gloves",
 		hands="Adhemar Wristbands +1",
 		legs="Samnuha Tights",
@@ -514,7 +545,12 @@ function init_gear_sets()
 		ear1="Brutal Earring",
 		ear2="Sherida Earring",
 		ring1="Epona's Ring",
+<<<<<<< HEAD
 		ring2="Niqmaddu Ring",
+=======
+		-- ring1="Niqmaddu Ring",
+		ring2="Ilabrat Ring",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		back=gear.melee_cape,
 		-- waist="Ioskeha Belt",
 		waist="Windbuffet Belt +1"
@@ -569,7 +605,11 @@ function init_gear_sets()
 		ear1="Telos Earring",
 		ear2="Sherida Earring",
 		ring1="Defending Ring",
+<<<<<<< HEAD
 		ring2="Niqmaddu Ring",
+=======
+		ring2="Vocane Ring +1",
+>>>>>>> parent of d3b7c3c... FIle fixes.
 		back=gear.pdt_cape,
 		-- waist="Ioskeha Belt",
 		waist="Windbuffet Belt +1"
@@ -609,6 +649,26 @@ function init_gear_sets()
 		waist="Engraved Belt"
 		}
 
+<<<<<<< HEAD
+=======
+	sets.engaged.Resist = {
+		sub="Utu Grip",
+		ammo="Staunch Tathlum",
+		head="Turms Cap",
+		body="Runeist's Coat +3",
+		hands="Meghanada Gloves +2",
+		legs="Runiest's Trousers +2",
+		feet="Turms Leggings",
+		neck="Moonbeam Necklace",
+		ear1="Sanare Earring",
+		ear2="Hearty Earring",
+		ring1="Defending Ring",
+		ring2="Purity Ring",
+		back=gear.pdt_cape,
+		waist="Engraved Belt"
+		}
+
+>>>>>>> parent of d3b7c3c... FIle fixes.
 	-- Custom buff sets
 	sets.buff.Doom = {ring1="Saida Ring", ring2="Purity Ring", waist="Gishdubar Sash"}
 

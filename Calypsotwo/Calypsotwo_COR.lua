@@ -180,7 +180,11 @@ function init_gear_sets()
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
         body="Mummu Jacket +2",hands=gear.ranged_hands,ring1="Ilabrat Ring",ring2="Dingir Ring",
+<<<<<<< HEAD
         back=gear.ranged_cape,waist="Yemaya Belt",legs="Adhemar Kecks +1",feet="Adhemar Gamashes +1"}
+=======
+        back=gear.ranged_cape,waist="Yemaya Belt",legs="Meghanada Chausses +2",feet="Meghanada Jambeaux +2"}
+>>>>>>> parent of d3b7c3c... FIle fixes.
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
@@ -225,22 +229,38 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged.Melee = {ammo=gear.RAbullet,
         head="Adhemar Bonnet",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+<<<<<<< HEAD
         body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
+=======
+        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
+>>>>>>> parent of d3b7c3c... FIle fixes.
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.melee_feet}
     
     sets.engaged.Acc = {ammo=gear.RAbullet,
         head="Dampening Tam",neck="Sanctity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
+<<<<<<< HEAD
         body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Patricius Ring",ring2="Ilabrat Ring",
+=======
+        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Patricius Ring",ring2="Ilabrat Ring",
+>>>>>>> parent of d3b7c3c... FIle fixes.
         back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.melee_feet}
 
     sets.engaged.DW = {ammo=gear.RAbullet,
         head="Adhemar Bonnet",neck="Iskur Gorget",ear1="Telos Earring",ear2="Suppanomimi",
+<<<<<<< HEAD
         body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
+=======
+        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
+>>>>>>> parent of d3b7c3c... FIle fixes.
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.melee_feet}
     
     sets.engaged.DWAcc = {ammo=gear.RAbullet,
         head="Dampening Tam",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Suppanomimi",
+<<<<<<< HEAD
         body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Patricius Ring",ring2="Ilabrat Ring",
+=======
+        body="Adhemar Jacket",hands=gear.melee_hands,ring1="Patricius Ring",ring2="Ilabrat Ring",
+>>>>>>> parent of d3b7c3c... FIle fixes.
         back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.melee_feet}
 end
 

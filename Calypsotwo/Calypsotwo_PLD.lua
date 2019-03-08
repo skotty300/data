@@ -104,7 +104,7 @@ function init_gear_sets()
 
     sets.precast.WS.Acc = {ammo="Ginsen",
         head="Yaoyotl Helm",neck=gear.ElementalGorget,ear1="Bladeborn Earring",ear2="Moonshade Earring",
-        body="Xaddi mail",hands="Founder's Guantlets",ring1="Rajas Ring",ring2="Patricius Ring",
+        body="Xaddi mail",hands="Founder's Guantlets",ring1="Rajas Ring",ring2="Chirich Ring",
         back=gear.savage_cape,waist="Fotia Belt",legs="Cizin Breeches",feet="Whirlpool Greaves"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -118,7 +118,7 @@ function init_gear_sets()
 
     sets.precast.WS['Sanguine Blade'] = {ammo="Ginsen",
         head="Pixie Hairpin +1",neck="Eddy Necklace",ear1="Friomisi Earring",ear2="Moonshade's Earring",
-        body="Reverence Surcoat +3",hands="Reverence Gauntlets +1",ring1="Shiva Ring",ring2="Patricius Ring",
+        body="Reverence Surcoat +3",hands="Reverence Gauntlets +1",ring1="Shiva Ring",ring2="Chirich Ring",
         back="Toro Cape",waist="Caudata Belt",legs="Reverence Breeches +1",feet="Reverence Leggings +1"}
     
     sets.precast.WS['Atonement'] = {ammo="Iron Gobbet",
@@ -127,7 +127,7 @@ function init_gear_sets()
         back="Fierabras's Mantle",waist="Fotia Belt",legs="Reverence Breeches +1",feet="Sulevia's Leggings +1"}
 
     sets.precast.WS['Aeolian Edge'] = {head="Reverence Coronet +1",neck="Eddy Necklace",ear1="Friomisi Earring",ear2="Moonshade's Earring",
-        body="Odyssean Chestplate",hands="Founder's Guantlets",ring1="Shiva Ring",ring2="Patricius Ring",
+        body="Odyssean Chestplate",hands="Founder's Guantlets",ring1="Shiva Ring",ring2="Chirich Ring",
         back="Toro Cape",waist="Caudata Belt",legs="Reverence Breeches +1",feet="Founder's Greaves"}
     
     --------------------------------------
@@ -272,7 +272,7 @@ function init_gear_sets()
 
     sets.engaged.Acc = {ammo="Ginsen",
         head="Souveran Schaller",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Emet Harness +1",hands="Acro Gauntlets",ring1="Mars's Ring",ring2="Patricius Ring",
+        body="Emet Harness +1",hands="Acro Gauntlets",ring1="Mars's Ring",ring2="Chirich Ring",
         back="Weard Mantle",waist="Zoran's Belt",legs="Acro Breeches",feet="Acro Leggings"}
 
     sets.engaged.DW = {ammo="Ginsen",
@@ -282,7 +282,7 @@ function init_gear_sets()
 
     sets.engaged.DW.Acc = {ammo="Ginsen",
         head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-        body="Reverence Surcoat +3",hands="Acro Gauntlets",ring1="Mars's Ring",ring2="Patricius Ring",
+        body="Reverence Surcoat +3",hands="Acro Gauntlets",ring1="Mars's Ring",ring2="Chirich Ring",
         back="Weard Mantle",waist="Zoran's Belt",legs="Acro Breeches",feet="Acro Leggings"}
 
     sets.engaged.PDT =  {ammo="Staunch Tathlum",

@@ -285,7 +285,7 @@ function init_gear_sets()
 		
     sets.engaged.Acc = {ammo="Yamarang",
         head="Pillager's Bonnet +2",neck="Iskur Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Pillager's Vest +2",hands="Mummu Wrists +2",ring1="Regal ring",ring2="Patricius Ring",
+        body="Pillager's Vest +2",hands="Mummu Wrists +2",ring1="Regal ring",ring2="Chirich Ring",
         back=gear.tp_back,waist="Kentarch Belt +1",legs="Pillager's Culottes +2",feet="Herculean boots"}
 end
 

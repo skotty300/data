@@ -230,7 +230,7 @@ function init_gear_sets()
     
     sets.engaged.Acc = {ammo=gear.RAbullet,
         head="Dampening Tam",neck="Sanctity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-        body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Patricius Ring",ring2="Ilabrat Ring",
+        body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Chirich Ring",ring2="Ilabrat Ring",
         back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.melee_feet}
 
     sets.engaged.DW = {ammo=gear.RAbullet,
@@ -240,7 +240,7 @@ function init_gear_sets()
     
     sets.engaged.DWAcc = {ammo=gear.RAbullet,
         head="Dampening Tam",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Suppanomimi",
-        body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Patricius Ring",ring2="Ilabrat Ring",
+        body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Chirich Ring",ring2="Ilabrat Ring",
         back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.melee_feet}
 end
 

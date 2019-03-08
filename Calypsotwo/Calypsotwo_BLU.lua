@@ -305,7 +305,7 @@ function init_gear_sets()
         back=gear.savage_cape,waist="Caudata Belt",legs="Herculean Trousers",feet=gear.tp_feet}
 
     sets.midcast['Blue Magic'].PhysicalAcc = set_combine(sets.midcast['Blue Magic'].Physical,
-		{ammo="Jukukik Feather",body="Ayanmo Corazza +2",ring2="Patricius Ring"})
+		{ammo="Jukukik Feather",body="Ayanmo Corazza +2",ring2="Chirich Ring"})
 
     sets.midcast['Blue Magic'].PhysicalStr = sets.midcast['Blue Magic'].Physical
 
@@ -446,7 +446,7 @@ function init_gear_sets()
 
     sets.engaged.Acc = {ammo="Honed Tathlum",
         head="Carmine Mask",neck="Sanctity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Assimilator's Jubbah +2",hands="Assimilator's Bazubands +2",ring1="Patricius Ring",ring2="Mars's Ring",
+        body="Assimilator's Jubbah +2",hands="Assimilator's Bazubands +2",ring1="Chirich Ring",ring2="Mars's Ring",
         back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.tp_feet}
 
     sets.engaged.Refresh = {ammo="Ginsen",

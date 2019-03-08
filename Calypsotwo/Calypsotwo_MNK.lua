@@ -230,15 +230,15 @@ function init_gear_sets()
     -- Defensive melee hybrid sets
     sets.engaged.PDT = {ammo="Thew Bomblet",
         head="Uk'uxkaj Cap",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Patricius Ring",ring2="Epona's Ring",
+        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Chirich Ring",ring2="Epona's Ring",
         back="Iximulew Cape",waist="Windbuffet Belt",legs="Mummu Kecks +2",feet="Otronif Boots +1"}
     sets.engaged.SomeAcc.PDT = {ammo="Honed Tathlum",
         head="Whirlpool Mask",neck="Ej Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Qaaxo Harness",hands="Hesychast's Gloves +1",ring1="Patricius Ring",ring2="Epona's Ring",
+        body="Qaaxo Harness",hands="Hesychast's Gloves +1",ring1="Chirich Ring",ring2="Epona's Ring",
         back="Atheling Mantle",waist="Anguinus Belt",legs="Mummu Kecks +2",feet="Anchorite's Gaiters +1"}
     sets.engaged.Acc.PDT = {ammo="Honed Tathlum",
         head="Whirlpool Mask",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Patricius Ring",ring2="Epona's Ring",
+        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Chirich Ring",ring2="Epona's Ring",
         back="Letalis Mantle",waist="Anguinus Belt",legs="Mummu Kecks +2",feet="Qaaxo Leggings"}
     sets.engaged.Counter = {ammo="Thew Bomblet",
         head="Whirlpool Mask",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
@@ -246,7 +246,7 @@ function init_gear_sets()
         back="Atheling Mantle",waist="Windbuffet Belt",legs="Anchorite's Hose",feet="Otronif Boots +1"}
     sets.engaged.Acc.Counter = {ammo="Honed Tathlum",
         head="Whirlpool Mask",neck="Ej Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Otronif Harness +1",hands="Hesychast's Gloves +1",ring1="Patricius Ring",ring2="Epona's Ring",
+        body="Otronif Harness +1",hands="Hesychast's Gloves +1",ring1="Chirich Ring",ring2="Epona's Ring",
         back="Letalis Mantle",waist="Anguinus Belt",legs="Anchorite's Hose",feet="Otronif Boots +1"}
 
 

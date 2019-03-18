@@ -236,20 +236,62 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     
-    sets.precast.FC = {ammo="Impatiens",
-        head="Amalric Coif",neck="Baetyl Pendant",ear1="",ear2="Loquac. Earring",
-        body="Luhlaza Jubbah",hands="Leyline gloves",ring1="Prolix Ring",ring2="Weather. Ring",
-        back="Swith Cape",waist="Witful Belt",legs="Psycloth lappas",feet="Carmine Greaves"}
+    sets.precast.FC = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Amar Cluster",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Sanctity Necklace",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Prolix Ring",
+    right_ring="Kishar Ring",
+    back="Swith Cape",
+}
         
-    sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Mavi Mintan +2"})
+    sets.precast.FC['Blue Magic'] = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Amar Cluster",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Sanctity Necklace",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Prolix Ring",
+    right_ring="Kishar Ring",
+    back="Swith Cape",
+}
 
        
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Jukukik Feather",
-        head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Petrov Ring",ring2="Ilabrat Ring",
-		back="Rosmerta's Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Thereoid Greaves"}
+    sets.precast.WS = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ginsen",
+    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+20','"Triple Atk."+4','DEX+2','Attack+15',}},
+    feet="Thereoid Greaves",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Brutal Earring",
+    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ring="Hetairoi Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+}
     
     sets.precast.WS.acc = set_combine(sets.precast.WS, {hands="Buremte Gloves"})
 
@@ -266,10 +308,23 @@ function init_gear_sets()
     
     
     -- Midcast Sets
-    sets.midcast.FastRecast = {ammo="Sapience Orb",
-        head="Carmine Mask",neck="Baetyl Pendant",ear1="",ear2="Loquac. Earring",
-        body="Luhlaza Jubbah",hands="Leyline gloves",ring1="Prolix Ring",ring2="Weather. Ring",
-        back="Swith Cape",waist="Witful Belt",legs="Homam Cosciales",feet="Carmine Greaves"}
+    sets.midcast.FastRecast = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Amar Cluster",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Sanctity Necklace",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Prolix Ring",
+    right_ring="Kishar Ring",
+    back="Swith Cape",
+}
         
     sets.midcast['Blue Magic'] = {}
     
@@ -328,47 +383,151 @@ function init_gear_sets()
 
     -- Magical Spells --
     
-    sets.midcast['Blue Magic'].Magical = {ammo="Ghastly Tathlum",
-        head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Jhakri Robe +1",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
-        back="Seshaw Cape",waist="Eschan Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
+    sets.midcast['Blue Magic'].Magical = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ghastly Tathlum",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
 
-    sets.midcast['Blue Magic'].Magical.Resistant = {ammo="Ghastly Tathlum",
-        head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Jhakri Robe +1",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
-        back="Seshaw Cape",waist="Eschan Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
+    sets.midcast['Blue Magic'].Magical.Resistant = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ghastly Tathlum",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
     
-    sets.midcast['Blue Magic'].MagicalMnd = {ammo="Ghastly Tathlum",
-        head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Jhakri Robe +1",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
-        back="Seshaw Cape",waist="Eschan Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
+    sets.midcast['Blue Magic'].MagicalMnd = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ghastly Tathlum",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
 
-    sets.midcast['Blue Magic'].MagicalChr = {ammo="Ghastly Tathlum",
-        head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Jhakri Robe +1",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
-        back="Seshaw Cape",waist="Eschan Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
+    sets.midcast['Blue Magic'].MagicalChr = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ghastly Tathlum",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
 
-    sets.midcast['Blue Magic'].MagicalVit = {ammo="Ghastly Tathlum",
-        head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Jhakri Robe +1",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
-        back="Seshaw Cape",waist="Eschan Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
+    sets.midcast['Blue Magic'].MagicalVit = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ghastly Tathlum",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
 
-    sets.midcast['Blue Magic'].MagicalDex = {ammo="Ghastly Tathlum",
-        head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Jhakri Robe +1",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
-        back="Seshaw Cape",waist="Eschan Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
+    sets.midcast['Blue Magic'].MagicalDex = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ghastly Tathlum",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
 
-    sets.midcast['Blue Magic'].MagicAccuracy = {ammo="Ghastly Tathlum",
-        head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Jhakri Robe +1",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
-        back="Seshaw Cape",waist="Eschan Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
+    sets.midcast['Blue Magic'].MagicAccuracy = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ghastly Tathlum",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
 
     -- Breath Spells --
     
-    sets.midcast['Blue Magic'].Breath = {ammo="Ghastly Tathlum",
-        head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Jhakri Robe +1",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
-        back="Seshaw Cape",waist="Eschan Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
+    sets.midcast['Blue Magic'].Breath = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ghastly Tathlum",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
 
     -- Other Types --
     
@@ -412,26 +571,78 @@ function init_gear_sets()
     sets.latent_refresh = {waist="Fucho-no-obi"}
 
     -- Resting sets
-    sets.resting = {ammo="Impatiens",
-        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Infused Earring",ear2="Ethereal Earring",
-        body="Jhakri Robe +1",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring",
-        back="Umbra Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Serpentes Sabots"}
+    sets.resting = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Staunch Tathlum +1",
+    head="Rawhide Mask",
+    body="Jhakri Robe +2",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Moonlight Cape",
+}
     
     -- Idle sets
-    sets.idle = {ammo="Staunch Tathlum",
-        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Infused Earring",ear2="Ethereal Earring",
-        body="Jhakri Robe +1",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring",
-        back="Umbra Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Serpentes Sabots"}
+    sets.idle = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Staunch Tathlum +1",
+    head="Rawhide Mask",
+    body="Jhakri Robe +2",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Moonlight Cape",
+}
 
-    sets.idle.PDT = {ammo="Impatiens",
-        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Infused Earring",ear2="Ethereal Earring",
-        body="Jhakri Robe +1",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring",
-        back="Umbra Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Serpentes Sabots"}
+    sets.idle.PDT = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Staunch Tathlum +1",
+    head="Rawhide Mask",
+    body="Jhakri Robe +2",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Moonlight Cape",
+}
 
-    sets.idle.Town = {ammo="Impatiens",
-        head="Rawhide Mask",neck="Sanctity Necklace",ear1="Infused Earring",ear2="Ethereal Earring",
-        body="Jhakri Robe +1",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring",
-        back="Umbra Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Serpentes Sabots"}
+    sets.idle.Town = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Staunch Tathlum +1",
+    head="Rawhide Mask",
+    body="Jhakri Robe +2",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Infused Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Moonlight Cape",
+}
 
     sets.idle.Learning = set_combine(sets.idle, sets.Learning)
 
@@ -457,35 +668,113 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    sets.engaged = {ammo="Ginsen",
-        head="Herculean Helm",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
-        body="Adhemar Jacket",hands="Herculean Gloves",ring1="Petrov Ring",ring2="Ilabrat Ring",
-        back="Rosmerta's Cape",waist="Windbuffet Belt +1",legs="Herculean Trousers",feet="Herculean Boots"}
+    sets.engaged = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ginsen",
+    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+20','"Triple Atk."+4','DEX+2','Attack+15',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+13 Attack+13','"Triple Atk."+4','DEX+10','Attack+15',}},
+    neck="Ainia Collar",
+    waist="Windbuffet Belt +1",
+    left_ear="Brutal Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+}
 
-    sets.engaged.Acc = {ammo="Ginsen",
-        head="Aya. Zucchetto +1",neck="Subtlety Spec.",ear1="Brutal Earring",ear2="Suppanomimi",
-        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Petrov Ring",ring2="Ilabrat Ring",
-        back="Rosmerta's Cape",waist="Eschan Stone",legs="Carmine Cuisses +1",feet="Aya. Gambieras +1"}
+    sets.engaged.Acc = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ginsen",
+    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+20','"Triple Atk."+4','DEX+2','Attack+15',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+13 Attack+13','"Triple Atk."+4','DEX+10','Attack+15',}},
+    neck="Ainia Collar",
+    waist="Windbuffet Belt +1",
+    left_ear="Brutal Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+}
 
-    sets.engaged.Refresh = {ammo="Ginsen",
-        head="Herculean Helm",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
-        body="Adhemar Jacket",hands="Herculean Gloves",ring1="Petrov Ring",ring2="Ilabrat Ring",
-        back="Rosmerta's Cape",waist="Windbuffet Belt +1",legs="Herculean Trousers",feet="Herculean Boots"}
+    sets.engaged.Refresh = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ginsen",
+    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+20','"Triple Atk."+4','DEX+2','Attack+15',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+13 Attack+13','"Triple Atk."+4','DEX+10','Attack+15',}},
+    neck="Ainia Collar",
+    waist="Windbuffet Belt +1",
+    left_ear="Brutal Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+}
 
-    sets.engaged.DW = {ammo="Ginsen",
-        head="Herculean Helm",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
-        body="Adhemar Jacket",hands="Herculean Gloves",ring1="Petrov Ring",ring2="Rajas Ring",
-        back="Rosmerta's Cape",waist="Windbuffet Belt +1",legs="Herculean Trousers",feet="Herculean Boots"}
+    sets.engaged.DW = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ginsen",
+    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+20','"Triple Atk."+4','DEX+2','Attack+15',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+13 Attack+13','"Triple Atk."+4','DEX+10','Attack+15',}},
+    neck="Ainia Collar",
+    waist="Windbuffet Belt +1",
+    left_ear="Brutal Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+}
 
-    sets.engaged.DW.Acc = {ammo="Ginsen",
-        head="Herculean Helm",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
-        body="Adhemar Jacket",hands="Herculean Gloves",ring1="Petrov Ring",ring2="Rajas Ring",
-        back="Rosmerta's Cape",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Herculean Boots"}
+    sets.engaged.DW.Acc = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ginsen",
+    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+20','"Triple Atk."+4','DEX+2','Attack+15',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+13 Attack+13','"Triple Atk."+4','DEX+10','Attack+15',}},
+    neck="Ainia Collar",
+    waist="Windbuffet Belt +1",
+    left_ear="Brutal Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+}
 
-    sets.engaged.DW.Refresh = {ammo="Ginsen",
-        head="Herculean Helm",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
-        body="Adhemar Jacket",hands="Herculean Gloves",ring1="Petrov Ring",ring2="Rajas Ring",
-        back="Rosmerta's Cape",waist="Windbuffet Belt +1",legs="Herculean Trousers",feet="Herculean Boots"}
+    sets.engaged.DW.Refresh = {
+    main={ name="Colada", augments={'Crit.hit rate+3','DEX+1','Accuracy+10','Attack+7','DMG:+16',}},
+    sub={ name="Colada", augments={'"Dbl.Atk."+4','DEX+6','Accuracy+15','Attack+12','DMG:+3',}},
+    ammo="Ginsen",
+    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+20','"Triple Atk."+4','DEX+2','Attack+15',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+13 Attack+13','"Triple Atk."+4','DEX+10','Attack+15',}},
+    neck="Ainia Collar",
+    waist="Windbuffet Belt +1",
+    left_ear="Brutal Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+}
 
     sets.engaged.Learning = set_combine(sets.engaged, sets.Learning)
     sets.engaged.DW.Learning = set_combine(sets.engaged.DW, sets.Learning)

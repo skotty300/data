@@ -11,7 +11,7 @@ function get_sets()
 	-- Idle set
 	----------------------------------------------------------------------
 	-- Initializes an array to begin storing set data
-	sets.idle = {
+    sets.idle = {
 		sub="Utu Grip",
 	    ammo="Staunch Tathlum +1",
 	    head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -23,8 +23,8 @@ function get_sets()
 	    waist="Flume Belt +1",
 	    left_ear="Odnowa Earring +1",
 	    right_ear="Odnowa Earring",
-	    left_ring="Moonbeam Ring",
-	    right_ring="Moonbeam Ring",
+	    left_ring="Moonlight Ring",
+	    right_ring="Moonlight Ring",
 	    back="Moonlight Cape",
 	}
 
@@ -41,8 +41,8 @@ function get_sets()
 	    waist="Flume Belt +1",
 	    left_ear="Odnowa Earring +1",
 	    right_ear="Odnowa Earring",
-	    left_ring="Moonbeam Ring",
-	    right_ring="Moonbeam Ring",
+	    left_ring="Moonlight Ring",
+	    right_ring="Moonlight Ring",
 	    back="Moonlight Cape",
 	} -- end sets.idle
 
@@ -67,12 +67,12 @@ function get_sets()
 		sub="Utu Grip",
 	    ammo="Ginsen",
 	    head="Flam. Zucchetto +2",
-	    body="Flamma Korazin +2",
+	    body="Dagon Breast.",
 	    hands="Sulev. Gauntlets +2",
 	    legs="Pumm. Cuisses +3",
 	    feet="Pumm. Calligae +3",
-	    neck="Ainia Collar",
-	    waist="Ioskeha Belt",
+	    neck="War. Beads +1",
+	    waist="Ioskeha Belt +1",
 	    left_ear="Brutal Earring",
 	    right_ear="Telos Earring",
 	    left_ring="Flamma Ring",
@@ -89,8 +89,8 @@ function get_sets()
 	    hands="Pumm. Mufflers +3",
 	    legs="Pumm. Cuisses +3",
 	    feet="Pumm. Calligae +3",
-	    neck="Lissome Necklace",
-	    waist="Ioskeha Belt",
+	    neck="War. Beads +1",
+	    waist="Ioskeha Belt +1",
 	    left_ear="Brutal Earring",
 	    right_ear="Telos Earring",
 	    left_ring="Regal Ring",
@@ -108,7 +108,7 @@ function get_sets()
 	    legs="Sulev. Cuisses +2",
 	    feet="Pumm. Calligae +3",
 	    neck="Loricate Torque +1",
-	    waist="Ioskeha Belt",
+	    waist="Ioskeha Belt +1",
 	    left_ear="Brutal Earring",
 	    right_ear="Telos Earring",
 	    left_ring="Regal Ring",
@@ -130,7 +130,7 @@ function get_sets()
 	    legs="Pumm. Cuisses +3",
 	    feet={ name="Odyssean Greaves", augments={'Accuracy+24 Attack+24','"Fast Cast"+4','MND+4','Accuracy+7',}},
 	    neck="Loricate Torque +1",
-	    waist="Ioskeha Belt",
+	    waist="Ioskeha Belt +1",
 	    left_ear="Odnowa Earring +1",
 	    right_ear="Loquac. Earring",
 	    left_ring="Prolix Ring",
@@ -148,7 +148,7 @@ function get_sets()
 	    legs="Pumm. Cuisses +3",
 	    feet={ name="Odyssean Greaves", augments={'Accuracy+24 Attack+24','"Fast Cast"+4','MND+4','Accuracy+7',}},
 	    neck="Loricate Torque +1",
-	    waist="Ioskeha Belt",
+	    waist="Ioskeha Belt +1",
 	    left_ear="Odnowa Earring +1",
 	    right_ear="Loquac. Earring",
 	    left_ring="Prolix Ring",
@@ -239,21 +239,22 @@ function get_sets()
 
 	-- Midcast : Weapon Skill : Resolution
 	sets.midcast.ws['Resolution'] = {
-		sub="Utu Grip",
-	    ammo="Knobkierrie",
-	    head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
-	    body="Pumm. Lorica +3",
-	    hands="Argosy Mufflers +1",
-	    legs="Pumm. Cuisses +3",
-	    feet="Sulev. Leggings +2",
-	    neck="Fotia Gorget",
-	    waist="Fotia Belt",
-	    left_ear="Brutal Earring",
-	    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-	    left_ring="Regal Ring",
-	    right_ring="Niqmaddu Ring",
-	    back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
-	} -- end sets.midcast.ws['Resolution']
+    main="",
+    sub="Utu Grip",
+    ammo="Seeth. Bomblet +1",
+    head="Flam. Zucchetto +2",
+    body={ name="Argosy Hauberk +1", augments={'STR+12','Attack+20','"Store TP"+6',}},
+    hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
+    legs="Pumm. Cuisses +3",
+    feet="Pumm. Calligae +3",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Brutal Earring",
+    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ring="Regal Ring",
+    right_ring="Niqmaddu Ring",
+    back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
+} -- end sets.midcast.ws['Resolution']
 
 	-- Midcast : Weapon Skill : Resolution
 	sets.midcast.ws.accuracy['Resolution'] = {    
@@ -264,7 +265,7 @@ function get_sets()
 	    hands="Pumm. Mufflers +3",
 	    legs="Pumm. Cuisses +3",
 	    feet="Pumm. Calligae +3",
-	    neck="Fotia Gorget",
+	    neck="War. Beads +1",
 	    waist="Fotia Belt",
 	    left_ear="Brutal Earring",
 	    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -301,7 +302,7 @@ function get_sets()
 	    legs="Pumm. Cuisses +3",
 	    feet="Pumm. Calligae +3",
 	    neck="Fotia Gorget",
-	    waist="Ioskeha Belt",
+	    waist="Ioskeha Belt +1",
 	    left_ear="Brutal Earring",
 	    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 	    left_ring="Regal Ring",
@@ -337,7 +338,7 @@ function get_sets()
 	    legs="Pumm. Cuisses +3",
 	    feet="Pumm. Calligae +3",
 	    neck="Fotia Gorget",
-	    waist="Ioskeha Belt",
+	    waist="Ioskeha Belt +1",
 	    left_ear="Brutal Earring",
 	    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 	    left_ring="Regal Ring",
@@ -376,20 +377,23 @@ function get_sets()
 	} -- end sets.jobAbility['Mighty Strikes']
 
 	-- Provoke
-	sets.jobAbility['Provoke'] = {ammo="Sapience Orb",
-		head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-		body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
-		hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-		legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-		feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-		neck="Moonbeam Necklace",
-		waist="Goading Belt",
-		left_ear="Telos Earring",
-		right_ear="Cryptic Earring",
-		left_ring="Apeile Ring +1",
-		right_ring="Apeile Ring",
-		back="Moonlight Cape",
-	} -- end sets.jobAbility['Provoke']
+	sets.jobAbility['Provoke'] = {
+		sub="Utu Grip",
+	    ammo="Ginsen",
+	    head="Flam. Zucchetto +2",
+	    body="Dagon Breast.",
+	    hands="Sulev. Gauntlets +2",
+	    legs="Pumm. Cuisses +3",
+	    feet="Pumm. Calligae +3",
+	    neck="War. Beads +1",
+	    waist="Ioskeha Belt +1",
+	    left_ear="Brutal Earring",
+	    right_ear="Telos Earring",
+	    left_ring="Flamma Ring",
+	    right_ring="Niqmaddu Ring",
+	    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},
+	}
+ -- end sets.jobAbility['Provoke']
 
 	-- Restraint
 	sets.jobAbility['Restraint'] = {

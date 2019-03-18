@@ -160,7 +160,7 @@ function init_gear_sets()
     -- Pact delay reduction gear
     sets.precast.BloodPactWard = {ammo="Sancus Sachet",
 		head="Convoker's Horn +2",neck="Incanter's Torque",ear2="Andoaa Earring",
-		body="Convoker's Doublet +2",hands="Glyphic Bracers +1",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Convoker's Doublet +3",hands="Glyphic Bracers +1",ring1="Stikini Ring",ring2="Stikini Ring",
         back="Conveyance Cape",legs="Glyphic spats"}
 
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
@@ -185,7 +185,7 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Myrkr'] = {
         head="Nahtirah Hat",ear1="Gifted Earring",ear2="Loquacious Earring",
-        body="Convoker's Doublet +2",hands="Caller's Bracers +2",ring1="Evoker's Ring",ring2="Sangoma Ring",
+        body="Convoker's Doublet +3",hands="Caller's Bracers +2",ring1="Evoker's Ring",ring2="Sangoma Ring",
         back="Pahtli Cape",waist="Fucho-no-Obi",legs="Nares Trews",feet="Chelona Boots +1"}
 
     
@@ -232,7 +232,7 @@ function init_gear_sets()
     
     sets.midcast.Pet.PhysicalBloodPactRage = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet",
         head="Helios Band",neck="Shulmanu Collar",ear1="Gelos earring", ear2="Lugalbanda earring",
-		body="Convoker's Doublet +2",hands=gear.bp_physical_hands,ring1="Varar Ring +1",ring2="Varar Ring +1",
+		body="Convoker's Doublet +3",hands=gear.bp_physical_hands,ring1="Varar Ring +1",ring2="Varar Ring +1",
 		back=gear.pet_melee_back,waist="Incarnation Sash",legs=gear.bp_physical_legs,feet="Apogee Pumps"}
 
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = sets.midcast.Pet.PhysicalBloodPactRage

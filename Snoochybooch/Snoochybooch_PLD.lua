@@ -63,19 +63,19 @@ function init_gear_sets()
     sets.precast.JA['Shield Bash'] = {hands="Caballarius Gauntlets +1"}
     sets.precast.JA['Sentinel'] = {ammo="Paeapua",
         head="Souv. Schaller +1",neck="Unmoving Collar",ear1="Odnowa Earring +1",ear2="Cryptic Earring",
-        body="Souveran Cuirass",hands="Souv. Handsch. +1",ring1="Apeile Ring",ring2="Apeile ring +1",
+        body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Apeile Ring",ring2="Apeile ring +1",
         back="Weard Mantle",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Caballarius Leggings +1"}
     sets.precast.JA['Rampart'] = {ammo="Paeapua",
         head="Caballarius Coronet +1",neck="Unmoving Collar",ear1="Odnowa Earring +1",ear2="Cryptic Earring",
-        body="Souveran Cuirass",hands="Souv. Handsch. +1",ring1="Apeile Ring",ring2="Apeile ring +1",
+        body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Apeile Ring",ring2="Apeile ring +1",
         back="Weard Mantle",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souvran Schuhs +1"}
     sets.precast.JA['Fealty'] = {body="Caballarius Surcoat +1"}
     sets.precast.JA['Divine Emblem'] = {feet="Chev. Sabatons +1"}
     sets.precast.JA['Cover'] = {head="Rev. Coronet +2"}
 	sets.precast.JA['Provoke'] = {ammo="Paeapua",
         head="Souv. Schaller +1",neck="Unmoving Collar",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Souveran Cuirass",hands="Souv. Handsch. +1",ring1="Apeile Ring +1",ring2="Apeile ring",
-        back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
+        body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Apeile Ring +1",ring2="Apeile ring",
+        back="Moonlight Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
     -- add mnd for Chivalry
     sets.precast.JA['Chivalry'] = {
@@ -83,7 +83,7 @@ function init_gear_sets()
     sub="",
     ammo="Paeapua",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     hands={ name="Cab. Gauntlets +1", augments={'Enhances "Chivalry" effect',}},
     legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -91,16 +91,16 @@ function init_gear_sets()
     waist="Creed Baudrier",
     left_ear="Nourish. Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
     
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {ammo="Paeapua",
         head="Souv. Schaller +1",neck="Unmoving Collar",ear1="Odnowa Earring +1",ear2="Cryptic Earring",
-        body="Souveran Cuirass",hands="Souv. Handsch. +1",ring1="Apeile Ring",ring2="Apeile ring +1",
+        body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Apeile Ring",ring2="Apeile ring +1",
         back="Weard Mantle",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souvran Schuhs +1"}
         
     -- Don't need any special gear for Healing Waltz.
@@ -115,17 +115,17 @@ function init_gear_sets()
     main="Burtgang",
     sub="Aegis",
     ammo="Sapience Orb",
-    head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
-    body={ name="Odyss. Chestplate", augments={'"Mag.Atk.Bns."+4','"Fast Cast"+3','INT+5','Mag. Acc.+14',}},
-    hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
+    head="Carmine Mask +1",
+    body="Rev. Surcoat +3",
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    feet={ name="Odyssean Greaves", augments={'Accuracy+24 Attack+24','"Fast Cast"+4','MND+4','Accuracy+7',}},
+    feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     neck="Dualism Collar",
     waist="Creed Baudrier",
     left_ear="Odnowa Earring +1",
-    right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
+    right_ear="Etiolation Earring",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10',}},
 }
 
@@ -179,7 +179,7 @@ function init_gear_sets()
     
     sets.precast.WS['Atonement'] = {ammo="Paeapua",
         head="Souv. Schaller +1",neck="Unmoving Collar",ear1="Cryptic Earring",ear2="Friomisi Earring",
-        body="Souveran Cuirass",hands="Souv. Handsch. +1",ring1="Apeile Ring",ring2="Apeile ring +1",
+        body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Apeile Ring",ring2="Apeile ring +1",
         back="Weard Mantle",waist="Goading Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
     
     --------------------------------------
@@ -189,19 +189,19 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
     main="Burtgang",
     sub="Aegis",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands="Regal Gauntlets",
-    legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    legs="Founder's Hose",
     feet={ name="Odyssean Greaves", augments={'Accuracy+24 Attack+24','"Fast Cast"+4','MND+4','Accuracy+7',}},
-    neck="Loricate Torque +1",
+    neck="Moonbeam Necklace",
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
         
     sets.midcast.Enmity = {
@@ -209,16 +209,16 @@ function init_gear_sets()
     sub="Aegis",
     ammo="Paeapua",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    neck="Unmoving Collar",
+    neck="Moonbeam Necklace",
     waist="Creed Baudrier",
     left_ear="Odnowa Earring +1",
     right_ear="Cryptic Earring",
-    left_ring="Apeile Ring +1",
-    right_ring="Apeile Ring",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
     back={ name="Weard Mantle", augments={'VIT+4','Enmity+4','Phalanx +3',}},
 }
 
@@ -227,11 +227,11 @@ function init_gear_sets()
     sub="",
     ammo="Paeapua",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    neck="Unmoving Collar",
+    neck="Moonbeam Necklace",
     waist="Creed Baudrier",
     left_ear="Odnowa Earring +1",
     right_ear="Cryptic Earring",
@@ -243,7 +243,7 @@ function init_gear_sets()
     sets.midcast.Reprisal = {
     main="Burtgang",
     sub="",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -253,15 +253,15 @@ function init_gear_sets()
     waist="Creed Baudrier",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
 	
 	sets.midcast.Phalanx = {
     main="Burtgang",
     sub="",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -271,17 +271,17 @@ function init_gear_sets()
     waist="Creed Baudrier",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
     back={ name="Weard Mantle", augments={'VIT+4','Enmity+4','Phalanx +3',}},
 }
     
     sets.midcast.Cure = {
     main="Burtgang",
     sub="",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -289,9 +289,9 @@ function init_gear_sets()
     waist="Creed Baudrier",
     left_ear="Nourish. Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
 
     sets.midcast['Enhancing Magic'] = {neck="Colossus's Torque",hands="Regal Gauntlets",waist="Olympus Sash",legs="Rev. Breeches +2",
@@ -315,7 +315,7 @@ function init_gear_sets()
     sets.idle = {
     main="Burtgang",
     sub="",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -325,15 +325,15 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
 
     sets.idle.Town = {
     main="Burtgang",
     sub="Aegis",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands="Regal Gauntlets",
@@ -343,15 +343,15 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Infused Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
     
-    sets.idle.Weak = {ammo="Staunch Tathlum",
+    sets.idle.Weak = {ammo="Staunch Tathlum +1",
         head="Souv. Schaller +1",neck="Sanctity Necklace",ear1="Odnowa Earring +1",ear2="Infused Earring",
-        body="Rev. Surcoat +3",hands="Regal Gauntlets",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
-        back="Moonbeam Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Souveran Schuhs +1"}
+        body="Rev. Surcoat +3",hands="Regal Gauntlets",left_ring="Moonlight Ring",right_ring="Moonlight Ring",
+        back="Moonlight Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Souveran Schuhs +1"}
     
     sets.idle.Weak.Reraise = set_combine(sets.idle.Weak, sets.Reraise)
     
@@ -378,7 +378,7 @@ function init_gear_sets()
     sets.defense.PDT = {
     main="Burtgang",
     sub="Aegis",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -388,14 +388,14 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
     sets.defense.HP = {
     main="Burtgang",
     sub="",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -405,14 +405,14 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
     sets.defense.Reraise = {
     main="Burtgang",
     sub="",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head="Twilight Helm",
     body="Twilight Mail",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -422,14 +422,14 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
     sets.defense.Charm = {
     main="Burtgang",
     sub="",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -439,16 +439,16 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
     -- To cap MDT with Shell IV (52/256), need 76/256 in gear.
     -- Shellra V can provide 75/256, which would need another 53/256 in gear.
     sets.defense.MDT = {
     main="Burtgang",
     sub="",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -458,9 +458,9 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
 
 
@@ -471,7 +471,7 @@ function init_gear_sets()
     sets.engaged = {
     main="Burtgang",
     sub="Aegis",
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
@@ -481,9 +481,9 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonbeam Cape",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
 
     sets.engaged.Acc = {
@@ -499,8 +499,8 @@ function init_gear_sets()
     waist="Eschan Stone",
     left_ear="Odnowa Earring +1",
     right_ear="Odnowa Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 }
 

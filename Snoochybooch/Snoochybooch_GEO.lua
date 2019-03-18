@@ -54,26 +54,64 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
     sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
-    sets.precast.JA['Life Cycle'] = {head="Azimuth Hood +1", body="Geomancy Tunic +1", back="Nantosuelta's Cape"}
+    sets.precast.JA['Life Cycle'] = {head="Azimuth Hood +1", body="Geomancy Tunic +2", back="Nantosuelta's Cape"}
     sets.precast.JA['Full Circle'] = {hands="Bagua Mitaines +1"}
     sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
 
     -- Fast cast sets for spells
     sets.precast.FC = {
---		ammo="Impatiens",
-        head="Nahtirah Hat",ear2="Loquacious Earring",neck="Voltsurge Torque",
-        body="Anhur Robe",hands="Merlinic dastanas",ring1="Kishar Ring",ring2="Leche ring",
-        back="Lifestream Cape",waist="Witful Belt",legs="Geomancy pants +1",feet="Merlinic Crackows"}
+    main="Idris",
+    sub="Genmei Shield",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head={ name="Merlinic Hood", augments={'Magic burst dmg.+7%','INT+14','Mag. Acc.+14','"Mag.Atk.Bns."+11',}},
+    body="Shango Robe",
+    hands="Repartie Gloves",
+    legs="Geomancy Pants +2",
+    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst dmg.+10%','Mag. Acc.+14',}},
+    neck="Loricate Torque +1",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Prolix Ring",
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +20','Pet: Damage taken -1%',}},
+}
 
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {
-		body="Heka's Kalasiris",
-        back="Pahtli Cape"
-    })
+    sets.precast.FC.Cure = {
+    main="Idris",
+    sub="Genmei Shield",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head={ name="Merlinic Hood", augments={'Magic burst dmg.+7%','INT+14','Mag. Acc.+14','"Mag.Atk.Bns."+11',}},
+    body="Shango Robe",
+    hands="Repartie Gloves",
+    legs="Geomancy Pants +2",
+    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst dmg.+10%','Mag. Acc.+14',}},
+    neck="Loricate Torque +1",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Prolix Ring",
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +20','Pet: Damage taken -1%',}},
+}
 
-    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
-        neck="Stoicheion Medal",
-        hands="Bagua Mitaines +1"
-    })
+    sets.precast.FC['Elemental Magic'] = {
+    main="Idris",
+    sub="Genmei Shield",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head={ name="Merlinic Hood", augments={'Magic burst dmg.+7%','INT+14','Mag. Acc.+14','"Mag.Atk.Bns."+11',}},
+    body="Shango Robe",
+    hands="Repartie Gloves",
+    legs="Geomancy Pants +2",
+    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst dmg.+10%','Mag. Acc.+14',}},
+    neck="Loricate Torque +1",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Prolix Ring",
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +20','Pet: Damage taken -1%',}},
+}
     
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
@@ -115,35 +153,37 @@ function init_gear_sets()
     -- Base fast recast for spells
     sets.midcast.FastRecast = {
     main="Idris",
+    sub="Genmei Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head={ name="Merlinic Hood", augments={'Magic burst dmg.+7%','INT+14','Mag. Acc.+14','"Mag.Atk.Bns."+11',}},
-    body={ name="Merlinic Jubbah", augments={'Mag. Acc.+21','Magic burst dmg.+10%','INT+9',}},
+    body="Shango Robe",
     hands="Repartie Gloves",
-    legs="Geo. Pants +1",
-    feet={ name="Amalric Nails", augments={'Mag. Acc.+15','"Mag.Atk.Bns."+15','"Conserve MP"+6',}},
+    legs="Geomancy Pants +2",
+    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst dmg.+10%','Mag. Acc.+14',}},
     neck="Loricate Torque +1",
     waist="Witful Belt",
-    left_ear="Ethereal Earring",
+    left_ear="Etiolation Earring",
     right_ear="Loquac. Earring",
-    left_ring="Prolix Ring",
-    right_ring="Kishar Ring",
-    back="Swith Cape",
+    left_ring="Kishar Ring",
+    right_ring="Prolix Ring",
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +20','Pet: Damage taken -1%',}},
 }
 
     sets.midcast.Geomancy = {
     main="Idris",
+	sub="Genmei Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +1",
     body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
-    hands="Geo. Mitaines +1",
-    legs="Geo. Pants +1",
+    hands="Geo. Mitaines +2",
+    legs="Geo. Pants +2",
     feet={ name="Medium's Sabots", augments={'MP+25','MND+2','"Conserve MP"+3',}},
-    neck="Loricate Torque +1",
+    neck="Bagua Charm",
     waist="Fucho-no-Obi",
     left_ear="Ethereal Earring",
     right_ear="Infused Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Shadow Ring",
     back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +20','Pet: Damage taken -1%',}},
 }
 
@@ -170,114 +210,172 @@ function init_gear_sets()
 --        back="Toro Cape",waist="Eschan Stone",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
 
     sets.midcast.HighTierNuke = {
+    main={ name="Grioavolr", augments={'INT+13','Mag. Acc.+30','"Mag.Atk.Bns."+25','Magic Damage +5',}},
+    sub="Niobid Strap",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-    head="Jhakri Coronal +2",
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +2",
-    legs="Jhakri Slops +2",
-    feet="Jhakri Pigaches +1",
-    neck="Mizu. Kubikazari",
+    head="Ea Hat",
+    body="Ea Houppelande",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs="Ea Slops",
+    feet="Jhakri Pigaches +2",
+    neck="Bagua Charm",
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
-    right_ear="Strophadic Earring",
-    left_ring="Shiva Ring",
-    right_ring="Shiva Ring",
+    right_ear="Regal Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
     back="Seshaw Cape",
 }
     
-    sets.midcast.HighTierNuke.Resistant = set_combine(sets.midcast.HighTierNuke, {
-        head="Welkin Crown",
-        ear1="Friomisi Earring",
-        ear2="Gwati Earring", 
-        hands="Psycloth Manillas",
-        back="Refraction Cape",
-        legs="Azimuth Tights",
-        feet="Helios Boots"
-    })
+    sets.midcast.HighTierNuke.Resistant = {
+    main="Idris",
+    sub="Genmei Shield",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Ea Hat",
+    body="Ea Houppelande",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs="Ea Slops",
+    feet="Jhakri Pigaches +2",
+    neck="Bagua Charm",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back="Seshaw Cape",
+}
     --sets.midcast['Elemental Magic'].Mindmelter = set_combine(sets.midcast.HighTierNuke, {
     --    main="Mindmelter"
     --})
 
     sets.precast.JA['Concentric Pulse'] = sets.midcast.HightTierNuke
 
-    sets.midcast.LowTierNuke = set_combine(sets.midcast.HighTierNuke, {
-        --sub="Giuoco Grip",
-        --ear2="Crematio Earring",
-        --body="Amalric doublet",
-        --feet="Umbani Boots"
-		legs="Merlinic Shalwar",
-        feet="Merlinic Crackows"
-    })
+    sets.midcast.LowTierNuke = {
+    main={ name="Grioavolr", augments={'INT+13','Mag. Acc.+30','"Mag.Atk.Bns."+25','Magic Damage +5',}},
+    sub="Niobid Strap",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Ea Hat",
+    body="Ea Houppelande",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs="Ea Slops",
+    feet="Jhakri Pigaches +2",
+    neck="Bagua Charm",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Regal Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','"Mag.Atk.Bns."+10',}},
+}
     
-    sets.midcast.LowTierNuke.Resistant = set_combine(sets.midcast.LowTierNuke, {
-        head="Merlinic Hood",
-        ear1="Friomisi Earring",
-        ear2="Barkarole Earring", 
-        legs="Azimuth Tights",
-        ring1="Sangoma Ring",
-        ring2="Resonance Ring",
-        back="Toro Cape",
-        feet="Merlinic Crackows"
-    })
+    sets.midcast.LowTierNuke.Resistant = {
+    main={ name="Grioavolr", augments={'INT+13','Mag. Acc.+30','"Mag.Atk.Bns."+25','Magic Damage +5',}},
+    sub="Niobid Strap",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Ea Hat",
+    body="Ea Houppelande",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs="Ea Slops",
+    feet="Jhakri Pigaches +2",
+    neck="Bagua Charm",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Regal Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Shiva Ring +1",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','"Mag.Atk.Bns."+10',}},
+}
 
-    sets.midcast.Macc = { 
-        main="Serenity",
-        sub="Mephitis Grip", 
-        ammo="Plumose Sachet",
-        head="Bagua Galero +1",
-        neck="Eddy Necklace", 
-        ear1="Lifestorm Earring", 
-        ear2="Psystorm Earring",
-        body="Azimuth Coat +1",
-        hands="Psycloth Manillas",
-        ring1="Perception Ring", 
-        ring2="Sangoma Ring",
-        back="Refraction Cape",
-        legs="Azimuth Tights +1",
-        waist="Yamabuki-no-obi", 
-        feet="Helios Boots"
-    }
+    sets.midcast.Macc = {
+    main={ name="Grioavolr", augments={'INT+13','Mag. Acc.+30','"Mag.Atk.Bns."+25','Magic Damage +5',}},
+    sub="Niobid Strap",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Geo. Galero +2",
+    body="Geomancy Tunic +2",
+    hands="Geo. Mitaines +2",
+    legs="Geomancy Pants +2",
+    feet="Geo. Sandals +2",
+    neck="Erra Pendant",
+    waist="Eschan Stone",
+    left_ear="Gwati Earring",
+    right_ear="Regal Earring",
+    left_ring="Stikini Ring",
+    right_ring="Stikini Ring",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','"Mag.Atk.Bns."+10',}},
+}
     
-    sets.midcast.Aspir = set_combine(sets.midcast.Macc, { 
-        head="Bagua Galero +1",
-        neck="Incanter's Torque", 
-        ear1="Gwati Earring",
-        ear2="Hirudinea Earring",
-        ring1="Evanescence Ring",
-        ring2="Archon Ring",
-        body="Geomancy Tunic +1",
-        waist="Fucho-no-obi",
-        legs="Azimuth Tights +1",
-    })
+    sets.midcast.Aspir = {
+    main={ name="Grioavolr", augments={'INT+13','Mag. Acc.+30','"Mag.Atk.Bns."+25','Magic Damage +5',}},
+    sub="Niobid Strap",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head={ name="Bagua Galero +1", augments={'Enhances "Primeval Zeal" effect',}},
+    body="Geomancy Tunic +2",
+    hands="Jhakri Cuffs +2",
+    legs="Azimuth Tights +1",
+    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst dmg.+10%','Mag. Acc.+14',}},
+    neck="Erra Pendant",
+    waist="Fucho-no-Obi",
+    left_ear="Gwati Earring",
+    right_ear="Infused Earring",
+    left_ring="Stikini Ring",
+    right_ring="Evanescence Ring",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','"Mag.Atk.Bns."+10',}},
+}
     sets.midcast.Drain = sets.midcast.Aspir
     sets.midcast.Stun = sets.midcast.Macc
 	
 	sets.magic_burst = {
+    main={ name="Grioavolr", augments={'INT+13','Mag. Acc.+30','"Mag.Atk.Bns."+25','Magic Damage +5',}},
+    sub="Niobid Strap",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head={ name="Merlinic Hood", augments={'Magic burst dmg.+7%','INT+14','Mag. Acc.+14','"Mag.Atk.Bns."+11',}},
-    body={ name="Merlinic Jubbah", augments={'Mag. Acc.+21','Magic burst dmg.+10%','INT+9',}},
+    body="Ea Houppelande",
     hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+28','Magic burst dmg.+10%','MND+13','Mag. Acc.+13',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+25','Magic burst dmg.+10%','Mag. Acc.+14',}},
     neck="Mizu. Kubikazari",
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
-    right_ear="Strophadic Earring",
-    left_ring="Locus Ring",
+    right_ear="Regal Earring",
+    left_ring="Shiva Ring +1",
     right_ring="Mujin Band",
-    back="Seshaw Cape",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','"Mag.Atk.Bns."+10',}},
 }
     
-    sets.midcast['Enfeebling Magic'] = set_combine(sets.midcast.Macc, {
-        head="Nahtirah Hat",neck="Incanter's Torque",ear1="Barkarole Earring",ear2="Gwati Earring",
-        body="Vanya Robe",hands="Azimuth gloves",ring1="Vertigo Ring",ring2="Sangoma Ring",
-        back="Aurist's cape",waist="Ovate Rope",legs="Psycloth Lappas",feet="Uk'uxkaj boots"
-    })
-    sets.midcast.ElementalEnfeeble = set_combine(sets.midcast.Macc, {
-        head="Nahtirah Hat",neck="Incanter's Torque",ear1="Barkarole Earring",ear2="Gwati Earring",
-        body="Vanya Robe",hands="Azimuth gloves",ring1="Vertigo Ring",ring2="Sangoma Ring",
-        back="Aurist's cape",waist="Ovate Rope",legs="Psycloth Lappas",feet="Uk'uxkaj boots"
-    })
+    sets.midcast['Enfeebling Magic'] = {
+    main={ name="Grioavolr", augments={'INT+13','Mag. Acc.+30','"Mag.Atk.Bns."+25','Magic Damage +5',}},
+    sub="Niobid Strap",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Geo. Galero +2",
+    body="Geomancy Tunic +2",
+    hands="Geo. Mitaines +2",
+    legs="Geomancy Pants +2",
+    feet="Geo. Sandals +2",
+    neck="Erra Pendant",
+    waist="Eschan Stone",
+    left_ear="Gwati Earring",
+    right_ear="Regal Earring",
+    left_ring="Stikini Ring",
+    right_ring="Stikini Ring",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','"Mag.Atk.Bns."+10',}},
+}
+    sets.midcast.ElementalEnfeeble = {
+    main={ name="Grioavolr", augments={'INT+13','Mag. Acc.+30','"Mag.Atk.Bns."+25','Magic Damage +5',}},
+    sub="Niobid Strap",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Geo. Galero +2",
+    body="Geomancy Tunic +2",
+    hands="Geo. Mitaines +2",
+    legs="Geomancy Pants +2",
+    feet="Geo. Sandals +2",
+    neck="Erra Pendant",
+    waist="Eschan Stone",
+    left_ear="Gwati Earring",
+    right_ear="Regal Earring",
+    left_ring="Stikini Ring",
+    right_ring="Stikini Ring",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','"Mag.Atk.Bns."+10',}},
+}
 
 	sets.midcast['Enhancing Magic'] = set_combine(sets.midcast.FastRecast, {
         --sub="Fulcio Grip", 
@@ -292,64 +390,68 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {main="Boonwell Staff",sub="Mephitis Grip",
         head="Orvail Corona +1",neck="Loricate Torque +1",
-        body="Jhakri Robe +2",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Vocane Ring",
+        body="Jhakri Robe +2",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Shadow Ring",
         waist="Austerity Belt",legs="Assiduity pants +1",feet="Chelona Boots"}
 
     -- Idle sets
     sets.idle = {
+    main="Idris",
+    sub="Genmei Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-    head="Azimuth Hood +1",
+    head="Befouled Crown",
     body="Jhakri Robe +2",
     hands={ name="Bagua Mitaines +1", augments={'Enhances "Curative Recantation" effect',}},
     legs="Assid. Pants +1",
-    feet="Geo. Sandals +1",
+    feet="Geo. Sandals +2",
     neck="Loricate Torque +1",
     waist="Fucho-no-Obi",
     left_ear="Ethereal Earring",
     right_ear="Infused Earring",
-    left_ring="Defending Ring",
-    right_ring="Vocane Ring",
-    back="Moonbeam Cape",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Moonlight Cape",
 }
     sets.idle.PDT = set_combine(sets.idle, {
         head="Hike Khat +1",
         hands="Geomancy Mitaines +1",
-    	back="Moonbeam Cape",
+    	back="Moonlight Cape",
         feet="Azimuth Gaiters +1"
     })
 
     -- .Pet sets are for when Luopan is present.
     sets.idle.Pet = {
     main="Idris",
+	sub="Genmei Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +1",
     body="Jhakri Robe +2",
-    hands="Geo. Mitaines +1",
+    hands="Geo. Mitaines +2",
     legs="Assid. Pants +1",
     feet={ name="Bagua Sandals +1", augments={'Enhances "Radial Arcana" effect',}},
-    neck="Loricate Torque +1",
+    neck="Bagua Charm",
     waist="Fucho-no-Obi",
     left_ear="Ethereal Earring",
     right_ear="Infused Earring",
-    left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
     back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},
 }
 
     sets.idle.PDT.Pet = {
     main="Idris",
+	sub="Genmei Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +1",
     body="Jhakri Robe +2",
-    hands="Geo. Mitaines +1",
+    hands="Geo. Mitaines +2",
     legs="Assid. Pants +1",
     feet={ name="Bagua Sandals +1", augments={'Enhances "Radial Arcana" effect',}},
-    neck="Loricate Torque +1",
+    neck="Bagua Charm",
     waist="Fucho-no-Obi",
     left_ear="Ethereal Earring",
-    right_ear="Infused Earring",
-    left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    right_ring="Shadow Ring",
     back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},
 }
 
@@ -372,21 +474,23 @@ function init_gear_sets()
         legs="Bagua Pants +1", 
     })
 
-    sets.idle.Town = set_combine(sets.idle, {
+    sets.idle.Town = {
+    main="Idris",
+    sub="Genmei Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-    head="Azimuth Hood +1",
+    head="Befouled Crown",
     body="Jhakri Robe +2",
     hands={ name="Bagua Mitaines +1", augments={'Enhances "Curative Recantation" effect',}},
     legs="Assid. Pants +1",
-    feet="Geo. Sandals +1",
+    feet="Geo. Sandals +2",
     neck="Loricate Torque +1",
     waist="Fucho-no-Obi",
     left_ear="Ethereal Earring",
     right_ear="Infused Earring",
-    left_ring="Defending Ring",
-    right_ring="Vocane Ring",
-    back="Moonbeam Cape",
-})
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Moonlight Cape",
+}
 
     sets.idle.Weak = sets.idle
 
@@ -399,8 +503,8 @@ function init_gear_sets()
         body="Azimuth Coat +1",
         hands="Geomancy Mitaines +2",
         ring1="Defending Ring",
-        ring2="Vocane Ring",
-        back="Umbra Cape",
+        ring2="Shadow Ring",
+        back="Moonlight Cape",
         feet="Azimuth Gaiters"
     }
 
@@ -412,8 +516,8 @@ function init_gear_sets()
         body="Azimuth Coat +1",
         hands="Geomancy Mitaines +2",
         ring1="Defending Ring",
-        ring2="Vocane Ring",
-        back="Umbra Cape",
+        ring2="Shadow Ring",
+        back="Moonlight Cape",
         waist="Yamabuki-no-Obi",
         --legs="Bokwus Slops",
     }
@@ -433,10 +537,21 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {
-        neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Azimuth Coat",hands="Geomancy Mitaines +2",ring1="Rajas Ring",ring2="Petrov ring",
-        back="Kayapa Cape",waist="Windbuffet Belt +1",legs="Geomancy Pants +1",feet="Umbani Boots"}
+    sets.engaged = {main="Idris",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Azimuth Hood +1",
+    body="Jhakri Robe +2",
+    hands="Geo. Mitaines +1",
+    legs="Assid. Pants +1",
+    feet={ name="Bagua Sandals +1", augments={'Enhances "Radial Arcana" effect',}},
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Ethereal Earring",
+    right_ear="Infused Earring",
+    left_ring="Defending Ring",
+    right_ring="Shadow Ring",
+    back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},
+}
 		
 end
 
@@ -560,5 +675,5 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-    set_macro_page(1, 8)
+    set_macro_page(1, 14)
 end

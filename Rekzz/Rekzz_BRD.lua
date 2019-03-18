@@ -27,7 +27,7 @@ function get_sets()
 
 	-- Instrument : Harp
 	sets.instruments[1] = {
-	    range="Daurdabla",
+	    range="Terpander",
 	}
 
 
@@ -38,22 +38,22 @@ function get_sets()
 	sets.idle = {}
 
 	-- Idle : Default
-	sets.idle = {
-	    main="Carnwenhan",
-	    sub="Ammurapi Shield",
-	    head="Inyanga Tiara +2",
-	    body="Inyanga Jubbah +2",
-	    hands="Inyan. Dastanas +2",
-	    legs="Inyanga Shalwar +2",
-	    feet="Fili Cothurnes +1",
-        neck="Loricate Torque +1",
-	    waist="Channeler's Stone",
-	    left_ear="Etiolation Earring",
-	    right_ear="Static Earring",
-        left_ring="Defending Ring",
-	    right_ring="Vocane Ring",
-        back="Solemnity Cape",
-	} -- end sets.idle
+	sets.idle ={
+    main="Blurred Knife +1",
+    range="Gjallarhorn",
+    head="Inyanga Tiara +1",
+    body="Inyanga Jubbah +1",
+    hands="Inyan. Dastanas +1",
+    legs="Inyanga Shalwar +1",
+    feet="Inyan. Crackows +1",
+    neck="Moonbow Whistle",
+    waist="Flume Belt +1",
+    left_ear="Psystorm Earring",
+    right_ear="Lifestorm Earring",
+    left_ring="Defending Ring",
+    right_ring="Inyanga Ring",
+    back="Moonbeam Cape",
+} -- end sets.idle
 
 
 	----------------------------------------------------------------------

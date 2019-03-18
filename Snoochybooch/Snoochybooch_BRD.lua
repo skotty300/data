@@ -27,7 +27,7 @@ function get_sets()
 
 	-- Instrument : Harp
 	sets.instruments[1] = {
-	    range="Terpander",
+	    range="Daurdabla",
 	}
 
 
@@ -39,20 +39,22 @@ function get_sets()
 
 	-- Idle : Default
 	sets.idle = {
-    main="Terra's Staff",
+    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
+    sub="Genmei Shield",
     range="",
-    body="Respite Cloak",
-    hands="Aya. Manopolas +2",
-    legs="Assid. Pants +1",
+    head="Inyanga Tiara +2",
+    body="Inyanga Jubbah +2",
+    hands="Inyan. Dastanas +2",
+    legs="Inyanga Shalwar +2",
     feet="Fili Cothurnes +1",
     neck="Loricate Torque +1",
     waist="Flume Belt +1",
-    left_ear="Etiolation Earring",
+    left_ear="Infused Earring",
     right_ear="Ethereal Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
     back="Moonlight Cape",
-} -- end sets.idle
+}-- end sets.idle
 
 
 	----------------------------------------------------------------------
@@ -63,21 +65,22 @@ function get_sets()
 
 	-- Melee : Default
 	sets.melee = {
-	    main="Carnwenhan",
-	    sub="Ammurapi Shield",
-        head="Aya. Zucchetto +2",
-        body="Ayanmo Corazza +2",
-        hands="Aya. Manopolas +2",
-        legs="Aya. Cosciales +2",
-        feet="Aya. Gambieras +2",
-        neck="Asperity Necklace",
-        waist="Grunfeld Rope",
-        left_ear="Brutal Earring",
-	    right_ear="Cessance Earring",
-        left_ring="Rajas Ring",
-        right_ring="Petrov Ring",
-	    back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},
-	} -- end sets.melee
+    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
+    sub="Genmei Shield",
+    range="",
+    head="Aya. Zucchetto +2",
+    body="Ayanmo Corazza +2",
+    hands="Aya. Manopolas +2",
+    legs="Aya. Cosciales +2",
+    feet="Aya. Gambieras +2",
+    neck="Lissome Necklace",
+    waist="Grunfeld Rope",
+    left_ear="Brutal Earring",
+    right_ear="Telos Earring",
+    left_ring="Ilabrat Ring",
+    right_ring="Petrov Ring",
+    back="Atheling Mantle",
+} -- end sets.melee
 
 
 	----------------------------------------------------------------------
@@ -89,37 +92,41 @@ function get_sets()
 
 	-- Precast : fastCast Song
 	sets.precast.fastCast.song = {
-    main="Terra's Staff",
+    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
+    sub="Genmei Shield",
     range="",
     head="Fili Calot +1",
-    body="Fili Hongreline +1",
+    body="Inyanga Jubbah +2",
     hands="Repartie Gloves",
     legs="Aya. Cosciales +2",
     feet="Fili Cothurnes +1",
-    neck="Loricate Torque +1",
+    neck="Mnbw. Whistle +1",
     waist="Witful Belt",
     left_ear="Etiolation Earring",
     right_ear="Loquac. Earring",
     left_ring="Kishar Ring",
     right_ring="Prolix Ring",
-    back="Swith Cape",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
 } -- end sets.precast.fastCast.song
 
 	-- Precast : fastCast Magic
 	sets.precast.fastCast.magic = {
-        head="Nahtirah Hat",
-        body="Inyanga Jubbah +2",
-        hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-        legs="Aya. Cosciales +2",
-        feet="Navon Crackows",
-        neck="Voltsurge Torque",
-        waist="Witful Belt",
-        left_ear="Loquac. Earring",
-        right_ear="Etiolation Earring",
-        left_ring="Prolix Ring",
-        right_ring="Kishar Ring",
-        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
-	} -- end sets.precast.fastCast.magic
+    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
+    sub="Genmei Shield",
+    range="",
+    head="Fili Calot +1",
+    body="Inyanga Jubbah +2",
+    hands="Repartie Gloves",
+    legs="Aya. Cosciales +2",
+    feet="Fili Cothurnes +1",
+    neck="Mnbw. Whistle +1",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Prolix Ring",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
+} -- end sets.precast.fastCast.magic
 
 
 	----------------------------------------------------------------------
@@ -180,38 +187,40 @@ function get_sets()
 
 	-- Midcast : Buff Song for Daurdabla
 	sets.midcast.buffSong["Daurdabla"] = {
-    main="Terra's Staff",
+    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
+    sub="Genmei Shield",
     range="",
     head="Fili Calot +1",
     body="Fili Hongreline +1",
     hands="Fili Manchettes +1",
-    legs="Fili Rhingrave +1",
+    legs="Inyanga Shalwar +2",
     feet="Fili Cothurnes +1",
-    neck="Moonbow Whistle",
+    neck="Mnbw. Whistle +1",
     waist="Flume Belt +1",
     left_ear="Infused Earring",
     right_ear="Ethereal Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonlight Cape",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
 } -- end sets.midcast.buffSong["Daurdabla"]
 
 	-- Midcast : Buff Song for Gjallarhorn
 	sets.midcast.buffSong["Gjallarhorn"] = {
-    main="Terra's Staff",
+    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
+    sub="Genmei Shield",
     range="",
     head="Fili Calot +1",
     body="Fili Hongreline +1",
     hands="Fili Manchettes +1",
-    legs="Fili Rhingrave +1",
+    legs="Inyanga Shalwar +2",
     feet="Fili Cothurnes +1",
-    neck="Moonbow Whistle",
+    neck="Mnbw. Whistle +1",
     waist="Flume Belt +1",
     left_ear="Infused Earring",
     right_ear="Ethereal Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Moonbeam Ring",
-    back="Moonlight Cape",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
 } -- end sets.midcast.buffSong["Gjallarhorn"]
 
 	-- Midcast : Buff Song for Gjallarhorn
@@ -275,13 +284,7 @@ function get_sets()
 
 	-- Ballad Song set
 	sets.utility.ballad = {
-	    legs="Fili Rhingrave +1",
-	} -- end sets.utility.ballad
-
-	-- Cure Casting Time set
-	sets.utility.cureCastingTime = {
-        main={ name="Serenity", augments={'MP+50','Enha.mag. skill +10','"Cure" potency +5%','"Cure" spellcasting time -10%',}},
-        legs="Doyen Pants",
+	    legs="Inyanga Shalwar +2",
 	} -- end sets.utility.ballad
 
 	-- Honor March Song set
@@ -623,3 +626,17 @@ function self_command(command)
 	end -- end if
 
 end -- end self_command()
+
+-- Select default macro book on initial load or subjob change.
+function select_default_macro_book()
+	-- Default macro set/book: (set, book)
+	if player.sub_job == 'BLU' then
+		set_macro_page(1, 12)
+	elseif player.sub_job == 'DRK' then
+		set_macro_page(1, 12)
+	elseif player.sub_job == 'WHM' then
+		set_macro_page(1, 12)
+	else
+		set_macro_page(1, 12)
+	end
+end

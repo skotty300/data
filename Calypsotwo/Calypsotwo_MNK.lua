@@ -211,7 +211,7 @@ function init_gear_sets()
     
     -- Normal melee sets
     sets.engaged = {ammo="Ginsen",
-        head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
+        head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
         body="Adhemar Jacket",hands="Mummu Wrists +2",ring1="Hetairoi Ring",ring2="Epona's Ring",
         back="Segomo's Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.tp_feet}
     sets.engaged.SomeAcc = {ammo="Honed Tathlum",
@@ -223,7 +223,7 @@ function init_gear_sets()
         body="Hizamaru Haramaki +2",hands="Mummu Wrists +2",ring1="Mars's Ring",ring2="Epona's Ring",
         back="Segomo's Mantle",waist="Windbuffet Belt +1",legs="Hizamaru Hizayoroi +1",feet="Hizamaru Sune-Ate +1"}
     sets.engaged.Mod = {ammo="Ginsen",
-        head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
+        head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
         body="Adhemar Jacket",hands="Anchorite's Gloves +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
         back="Segomo's Mantle",waist="Windbuffet Belt +1",legs="Hesychast's Hose +1",feet="Anchorite's Gaiters +1"}
 

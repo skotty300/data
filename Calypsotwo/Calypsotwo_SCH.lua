@@ -144,8 +144,8 @@ function get_sets()
 	    waist="Olympus Sash",
         left_ear="Mendi. Earring",
         right_ear="Andoaa Earring",
-        left_ring="Stikini Ring",
-        right_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
         back="Fi Follet Cape +1",
 	} -- end sets.midcast.magic.enhancing
 

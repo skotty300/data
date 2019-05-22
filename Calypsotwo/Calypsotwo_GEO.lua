@@ -132,8 +132,8 @@ function init_gear_sets()
         hands="Geomancy Mitaines +3", -- 15
         body="Bagua Tunic +3", -- 14
         back="Lifestream Cape", -- 9
-		ring1="Stikini Ring",
-		ring2="Stikini Ring",
+		ring1="Stikini Ring +1",
+		ring2="Stikini Ring +1",
         legs="Bagua Pants",
         feet="Medium's Sabots"
     }
@@ -222,8 +222,8 @@ function init_gear_sets()
         ear2="Regal Earring",
         body="Geomancy Tunic +3",
         hands="Geomancy Mitaines +3",
-        ring1="Stikini Ring", 
-        ring2="Stikini Ring",
+        ring1="Stikini Ring +1", 
+        ring2="Stikini Ring +1",
         back="Refraction Cape",
         legs="Geomancy Pants +2",
         waist="Yamabuki-no-obi", 
@@ -245,12 +245,12 @@ function init_gear_sets()
     
     sets.midcast['Enfeebling Magic'] = set_combine(sets.midcast.Macc, {
         head="Nahtirah Hat",neck="Incanter's Torque",ear1="Barkarole Earring",
-        body="Vanya Robe",back="Aurist's cape",waist="Ovate Rope",ring1="Stikini Ring",ring2="Stikini Ring"
+        body="Vanya Robe",back="Aurist's cape",waist="Ovate Rope",ring1="Stikini Ring +1",ring2="Stikini Ring +1"
     })
 	
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast.Macc, {
         head="Nahtirah Hat",neck="Incanter's Torque",ear1="Barkarole Earring",ear2="Gwati Earring",
-        body="Vanya Robe",ring1="Stikini Ring",ring2="Stikini Ring",
+        body="Vanya Robe",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back="Aurist's cape",waist="Ovate Rope",legs="Psycloth Lappas",feet="Uk'uxkaj boots"
     })
 

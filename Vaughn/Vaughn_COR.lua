@@ -89,7 +89,7 @@ function init_gear_sets()
 								head="Lanun Tricorne +3",
 								neck="Regal Necklace",
 								hands="Chasseur's Gants +1",
-								Ring="Barataria Ring",
+								Ring="Luzaf's Ring",
 								back=gear.ls_cape}  
 	
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chasseur's Culottes +1"})
@@ -136,12 +136,12 @@ function init_gear_sets()
 		ear1="Ishvara Earring",right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         body="Laksa. Frac +3",
 		hands="Meghanada Gloves +2",
-		ring1="Epona's Ring",
+		ring1="Regal Ring",
 		ring2="Epaminondas's Ring",
         back=gear.LastStand_cape,
 		waist="Fotia Belt",
 		legs="Herculean Trousers",
-		feet="Herculean Boots"}
+		feet="Lanun bottes +3"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Evisceration'] = sets.precast.WS
@@ -152,13 +152,13 @@ function init_gear_sets()
 
     sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
         head="Lanun Tricorne +3",
-		neck="Fotia Gorget",
+		neck="Comm. Charm +2",
 		ear1="Ishvara Earring",right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         body="Laksa. Frac +3",
 		hands="Meghanada Gloves +2",
 		ring1="Regal Ring",ring2="Epaminondas's Ring",
         back=gear.LastStand_cape,
-		waist="Fotia Belt",
+		waist="Prosilio Belt +1",
 		legs="Meghanada Chausses +1",
 		feet="Lanun Bottes +3"}
 		
@@ -168,7 +168,7 @@ sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
 		ear1="Ishvara Earring",right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         body="Laksa. Frac +3",
 		hands="Meghanada Gloves +2",
-		ring1="Ilabrat Ring",ring2="Epaminondas's Ring",
+		ring1="Regal Ring",ring2="Epaminondas's Ring",
         back=gear.LastStand_cape,
 		waist="Fotia Belt",
 		legs="Lanun Trews +3",
@@ -240,7 +240,7 @@ sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",
-		neck="Ocachi Gorget",
+		neck="Iskur Gorget",
 		ear1="Enervating Earring",ear2="Telos Earring",
         body="Mummu Jacket +2",
 		hands="Meghanada Gloves +2",
@@ -252,7 +252,7 @@ sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",
-		neck="Marked Gorget",
+		neck="Iskur Gorget",
 		ear1="Enervating Earring",ear2="Telos Earring",
         body="Mummu Jacket +2",
 		hands="Meghanada Gloves +1",
@@ -265,7 +265,7 @@ sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
 	-- SJ WAR 1268 RAcc / 1131 RAtt (w/ Fettering, Nusku, Fomalhaut, Chrono), TS +36% (96%) +10 DMG, 32 STP, 8 Crit%
 	sets.midcast.TS = {ammo=gear.RAbullet,
 		head="Oshosi Mask +1",
-		neck="Marked Gorget",
+		neck="Iskur Gorget",
 		ear1="Telos Earring",ear2="Enervating Earring",
 		body="Chasseur's Frac +1",
 		hands="Lanun Gants +3",

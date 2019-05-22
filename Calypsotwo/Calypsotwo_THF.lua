@@ -78,7 +78,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-    sets.TreasureHunter = {head="Turms Cap",body="Emet Harness +1",hands="Plunderer's Armlets +1",
+    sets.TreasureHunter = {head="Turms Cap +1",body="Emet Harness +1",hands="Plunderer's Armlets +1",
 		back=gear.tp_back,waist="Chaac Belt",ring2="Defending Ring",ring1="Vocane Ring +1",legs="Enif Cosciales",feet="Skulk. Poulaines +1"}
     sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
@@ -142,7 +142,7 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Yamarang",
-        head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
+        head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
         body="Lustratio Harness",hands="Adhemar Wristbands +1",ring1="Rajas Ring",ring2="Ifrit Ring",
         back=gear.ws_back,waist="Fotia Belt",legs="Herculean Trousers",feet="Adhemar Gamashes +1"}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Honed Tathlum", back="Letalis Mantle"})
@@ -161,7 +161,7 @@ function init_gear_sets()
     sets.precast.WS['Dancing Edge'].SATA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {ammo="Yamarang"})
 
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Seething Bomblet +1",
-        head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
+        head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
         body="Plunderer's Vest +1",hands="Adhemar Wristbands +1",ring1="Begrudging Ring",ring2="Regal Ring",
         back=gear.ws_back,waist="Fotia Belt",legs="Plunderer's Culottes",feet="Adhemar Gamashes +1"})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {ammo="Honed Tathlum", back="Letalis Mantle"})
@@ -239,37 +239,26 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Yetshila",
-        head="Turms Cap",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Sherida Earring",
-        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring +1",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Skadi's Jambeaux +1"}
-
-    sets.idle.Town = {main="Izhiikoh", sub="Sabebus",ammo="Yetshila",
-        head="Turms Cap",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Sherida Earring",
-        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring +1",
-        back="Moonbeam Cape",waist="Patentia Sash",legs="Mummu Kecks +2",feet="Skadi's Jambeaux +1"}
-
-    sets.idle.Weak = {ammo="Yetshila",
-        head="Pillager's Bonnet +1",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Sherida Earring",
-        body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Vocane Ring +1",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Skadi's Jambeaux +1"}
-
+        head="Turms Cap +1",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Sherida Earring",
+        body="Emet Harness +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Vocane Ring +1",
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Mummu Kecks +2",feet="Jute Boots +1"}
 
     -- Defense sets
 
     sets.defense.Evasion = {
         head="Pillager's Bonnet +1",neck="Ej Necklace",
-        body="Qaaxo Harness",hands="Taeon gloves",ring1="Defending Ring",ring2="Beeline Ring",
-        back="Canny Cape",waist="Flume Belt",legs="Herculean trousers",feet="Iuitl Gaiters +1"}
+        body="Qaaxo Harness",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Beeline Ring",
+        back="Canny Cape",waist="Flume Belt +1",legs="Herculean trousers",feet="Iuitl Gaiters +1"}
 
     sets.defense.PDT = {ammo="Iron Gobbet",
         head="Pillager's Bonnet +1",neck="Loricate Torque +1",
-        body="Emet harness +1",hands="Taeon gloves",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Iuitl Gaiters +1"}
+        body="Emet harness +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2=gear.DarkRing.physical,
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Mummu Kecks +2",feet="Iuitl Gaiters +1"}
 
     sets.defense.MDT = {ammo="Demonry Stone",
         head="Pillager's Bonnet +1",neck="Loricate Torque +1",
-        body="Emet harness +1",hands="Taeon gloves",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Iuitl Gaiters +1"}
+        body="Emet harness +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Shadow Ring",
+        back="Moonbeam Cape",waist="Flume Belt +1",legs="Mummu Kecks +2",feet="Iuitl Gaiters +1"}
 
 
     --------------------------------------
@@ -279,7 +268,7 @@ function init_gear_sets()
     -- Normal melee group
 	--Mecistopins Mantle
     sets.engaged = {ammo="Ginsen",
-        head="Adhemar Bonnet",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Sherida Earring",
+        head="Adhemar Bonnet +1",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Sherida Earring",
         body="Pillager's Vest +2",hands="Adhemar Wristbands +1",ring1="Hetairoi ring",ring2="Epona's Ring",
         back=gear.tp_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Plunderer's Poulaines"}
 		

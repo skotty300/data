@@ -100,7 +100,7 @@ function init_gear_sets()
     sets.precast.Waltz = {
         head="Whirlpool Mask",
         body="Meghanada Cuirie +2",hands="Laskamana's Gants +2",
-        legs="Laksamana's Trews +3",feet="Laksamana's Boots +2"}
+        legs="Laksamana's Trews +3",feet="Laksamana's Boots +3"}
 
     -- Fast cast sets for spells    
     sets.precast.FC = {head="Carmine Mask",ear1="Etiolation Earring",ear2="Loquacious Earring",
@@ -109,7 +109,7 @@ function init_gear_sets()
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads"})
 
     sets.precast.RA = {ammo=gear.RAbullet,
-        head=gear.snapshot_head,body="Laksamana's Frac +3",hands="Carmine Finger Gauntlets +1",
+        head=gear.snapshot_head,neck="Commodore Charm +2",body="Laksamana's Frac +3",hands="Carmine Finger Gauntlets +1",
         back=gear.snapshot_cape,waist="Impulse Belt",legs="Laksamana's Trews +3",feet="Meghanada Jambeaux +2"}
 		
     sets.precast.RA.Flurry = set_combine(sets.precast.RA, {head="Chasseur's Tricorne +1"})
@@ -137,12 +137,12 @@ function init_gear_sets()
         back=gear.LastStand_cape,waist="Fotia Belt",legs="Meghanada Chausses +2",feet="Lanun Bottes +3"}
     
     sets.precast.WS['Savage Blade'] = {
-        head="Lilitu Headpiece",neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
+        head="Lilitu Headpiece",neck="Commodore Charm +2",ear1="Ishvara Earring",ear2="Moonshade Earring",
         body="Laksamana's Frac +3",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Rufescent Ring",
         back=gear.LastStand_cape,waist="Metalsinger Belt",legs="Meghanada Chausses +2",feet="Lanun Bottes +3"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
-        head="Chasseur's Tricorne +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Novio Earring",
+        head="Chasseur's Tricorne +1",neck="Commodore Charm +2",ear1="Friomisi Earring",ear2="Novio Earring",
         body="Lanun Frac +3",hands=gear.magic_hands,ring1="Ilabrat Ring",ring2="Dingir Ring",
         back=gear.ls_cape,waist="Eschan Stone",legs=gear.magic_legs,feet="Lanun Bottes +3"}
     
@@ -154,25 +154,25 @@ function init_gear_sets()
     
     -- Midcast Sets TODO
     sets.midcast.FastRecast = {head="Whirlpool Mask",
-        body="Laksamana's Frac +3",hands="Leyline Gloves",legs="Carmine Cuisses +1",feet="Laksamana's Boots +2"}
+        body="Laksamana's Frac +3",hands="Leyline Gloves",legs="Carmine Cuisses +1",feet="Laksamana's Boots +3"}
         
     -- Specific spells
     sets.midcast.Utsusemi = sets.midcast.FastRecast
 
     sets.midcast.CorsairShot = {ammo=gear.QDbullet,
-        head="Laksamana's Tricorne +2",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Regal Earring",
+        head="Laksamana's Tricorne +3",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Regal Earring",
         body="Lanun Frac +3",hands="Carmine Finger Gauntlets +1",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.ls_cape,waist="Eschan Stone",legs="Meghanada Chausses +2",feet="Lanun Bottes +3"}
 
     sets.midcast.CorsairShot.Acc = {ammo=gear.QDbullet,
-        head="Laksamana's Tricorne +2",neck="Sanctity Necklace",ear1="Enervating Earring",ear2="Hecate's Earring",
+        head="Laksamana's Tricorne +3",neck="Commodore Charm +2",ear1="Enervating Earring",ear2="Hecate's Earring",
         body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Stikini Ring",
-        back=gear.ranged_cape,waist="Eschan Stone",legs="Mummu Kecks +2",feet="Laksamana's Boots +2"}
+        back=gear.ranged_cape,waist="Eschan Stone",legs="Mummu Kecks +2",feet="Laksamana's Boots +3"}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-        head="Laksamana's Tricorne +2",neck="Sanctity Necklace",ear1="Enervating Earring",ear2="Psystorm Earring",
+        head="Laksamana's Tricorne +3",neck="Commodore Charm +2",ear1="Enervating Earring",ear2="Psystorm Earring",
         body="Mummu Jacket +2",hands="Laskamana's Gants +2",ring1="Regal Ring",ring2="Stikini Ring",
-        back=gear.ranged_cape,waist="Eschan Stone",legs="Mummu Kecks +2",feet="Laksamana's Boots +2"}
+        back=gear.ranged_cape,waist="Eschan Stone",legs="Mummu Kecks +2",feet="Laksamana's Boots +3"}
 
     sets.midcast.CorsairShot['Dark Shot'] = sets.midcast.CorsairShot['Light Shot']
 
@@ -189,7 +189,8 @@ function init_gear_sets()
 	
 	-- SJ WAR 1268 RAcc / 1131 RAtt (w/ Fettering, Nusku, Fomalhaut, Chrono), TS +36% (96%) +10 DMG, 32 STP, 8 Crit%
     sets.midcast.TS = set_combine(sets.midcast.RA, { 
-        body="Chasseur's Frac +1",hands="Lanun Gants +3" })
+        head="Oshosi Mask +1",body="Chasseur's Frac +1",hands="Lanun Gants +3",
+        legs = "Oshosi Trouses +1",feet="Oshosi Leggings +1" })
 
     -- Sets to return to when not performing an action.
     
@@ -224,7 +225,7 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged.Melee = {ammo=gear.RAbullet,
-        head="Adhemar Bonnet",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Adhemar Bonnet +1",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
         body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.melee_feet}
     
@@ -234,12 +235,12 @@ function init_gear_sets()
         back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.melee_feet}
 
     sets.engaged.DW = {ammo=gear.RAbullet,
-        head="Adhemar Bonnet",neck="Iskur Gorget",ear1="Telos Earring",ear2="Suppanomimi",
+        head="Mummu Bonnet +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Suppanomimi",
         body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Petrov Ring",ring2="Epona's Ring",
         back=gear.melee_cape,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.melee_feet}
     
     sets.engaged.DWAcc = {ammo=gear.RAbullet,
-        head="Dampening Tam",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Suppanomimi",
+        head="Mummu Bonnet +2",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Suppanomimi",
         body="Adhemar Jacket +1",hands=gear.melee_hands,ring1="Chirich Ring",ring2="Ilabrat Ring",
         back=gear.melee_cape,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet=gear.melee_feet}
 end

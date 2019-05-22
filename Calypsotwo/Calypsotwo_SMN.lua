@@ -160,7 +160,7 @@ function init_gear_sets()
     -- Pact delay reduction gear
     sets.precast.BloodPactWard = {ammo="Sancus Sachet",
 		head="Convoker's Horn +2",neck="Incanter's Torque",ear2="Andoaa Earring",
-		body="Convoker's Doublet +3",hands="Glyphic Bracers +1",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Convoker's Doublet +3",hands="Glyphic Bracers +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back="Conveyance Cape",legs="Glyphic spats"}
 
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
@@ -207,7 +207,7 @@ function init_gear_sets()
 
     sets.midcast['Elemental Magic'] = {main="Lehbrailg +2",sub="Wizzan Grip",
         head="Hagondes Hat",neck="Stoicheion Medal",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Apogee dalmatica",hands="Yaoyotl Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
+        body="Apogee dalmatica",hands="Yaoyotl Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back="Toro Cape",waist=gear.ElementalBelt,legs="Hagondes Pants",feet="Hagondes Sabots"}
 
     sets.midcast['Dark Magic'] = {main="Lehbrailg +2",sub="Wizzan Grip",

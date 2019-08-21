@@ -66,7 +66,7 @@ function get_sets()
     head="Flam. Zucchetto +2",
     body="Emicho Haubert +1",
     hands="Emi. Gauntlets +1",
-    legs={ name="Argosy Breeches +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs="Ig. Flanchard +3",
     feet="Flam. Gambieras +2",
     neck="Abyssal Beads +2",
     waist="Ioskeha Belt +1",
@@ -87,7 +87,7 @@ function get_sets()
 	sets.ws.default = {
 	ammo="Knobkierrie",
     head={ name="Argosy Celata +1", augments={'DEX+12','Accuracy+20','"Dbl.Atk."+3',}},
-    body="Ignominy Cuirass +2",
+    body="Ignominy Cuirass +3",
     hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
     feet="Sulev. Leggings +2",
@@ -97,7 +97,7 @@ function get_sets()
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     left_ring="Epaminondas's Ring",
     right_ring="Niqmaddu Ring",
-    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%',}},
 	} -- end sets.ws.default
 	
 	
@@ -105,7 +105,7 @@ function get_sets()
 	sets.ws['Catastrophe'] = {
 	ammo="Knobkierrie",
 	head="Ratri Sallet +1",
-    body="Ignominy Cuirass +2",
+    body="Ignominy Cuirass +3",
     hands="Ratri Gadlings +1",
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
     feet="Ratri Sollerets +1",
@@ -123,7 +123,7 @@ function get_sets()
 	sets.ws['Cross Reaper'] = {
 	ammo="Knobkierrie",
     head="Ratri Sallet +1",
-    body="Ignominy Cuirass +2",
+    body="Ignominy Cuirass +3",
     hands="Ratri Gadlings +1",
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
     feet="Ratri Sollerets +1",
@@ -140,7 +140,7 @@ function get_sets()
 	sets.ws['Quietus'] = {
 	ammo="Knobkierrie",
     head="Ratri Sallet +1",
-    body="Ignominy Cuirass +2",
+    body="Ignominy Cuirass +3",
     hands="Ratri Gadlings +1",
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
     feet="Ratri Sollerets +1",
@@ -157,7 +157,7 @@ function get_sets()
 	sets.ws['Insurgency'] = {
     ammo="Knobkierrie",
     head="Ratri Sallet +1",
-    body="Ignominy Cuirass +2",
+    body="Ignominy Cuirass +3",
     hands="Ratri Gadlings +1",
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
     feet="Ratri Sollerets +1",
@@ -174,7 +174,7 @@ function get_sets()
 	sets.ws['Entropy'] = {
 	ammo="Knobkierrie",
     head="Ratri Sallet +1",
-    body="Ignominy Cuirass +2",
+    body="Ignominy Cuirass +3",
     hands="Ratri Gadlings +1",
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
     feet="Ratri Sollerets +1",
@@ -193,11 +193,11 @@ function get_sets()
     head={ name="Argosy Celata +1", augments={'DEX+12','Accuracy+20','"Dbl.Atk."+3',}},
     body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
-    legs={ name="Argosy Breeches +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs="Ig. Flanchard +3",
     feet={ name="Argosy Sollerets +1", augments={'STR+12','DEX+12','Attack+20',}},
-    neck="Fotia Gorget",
+    neck="Abyssal Beads +2",
     waist="Ioskeha Belt +1",
-    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Brutal Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Regal Ring",
@@ -208,19 +208,35 @@ function get_sets()
 	sets.ws['Torcleaver'] = {
 	ammo="Knobkierrie",
     head="Sulevia's Mask +2",
-    body="Ignominy Cuirass +2",
+    body="Ignominy Cuirass +3",
     hands="Sulev. Gauntlets +2",
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
     feet="Sulev. Leggings +2",
     neck="Fotia Gorget",
     waist="Fotia Belt",
-    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%',}},
 	} -- end sets.ws['Torcleaver'] 
 	
+	-- Weaponskill :Savage Blade
+	sets.ws['Savage Blade'] = {
+	ammo="Knobkierrie",
+    head="Sulevia's Mask +2",
+    body="Ignominy Cuirass +3",
+    hands="Sulev. Gauntlets +2",
+    legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
+    feet="Sulev. Leggings +2",
+    neck="Abyssal Beads +2",
+    waist="Prosilio Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Niqmaddu Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%',}},
+	} -- end sets.ws['Savage Blade'] 
 	
 	----------------------------------------------------------------------
 	-- Precast sets
@@ -231,13 +247,13 @@ function get_sets()
 	-- Precast : Fastcast
 	sets.precast.fastcast = {
     ammo="Sapience Orb",
-    head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
     body={ name="Odyss. Chestplate", augments={'"Mag.Atk.Bns."+6','"Fast Cast"+5','Mag. Acc.+1',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
-    feet={ name="Carmine Greaves", augments={'Accuracy+10','DEX+10','MND+15',}},
+    feet="Carmine Greaves +1",
     neck="Baetyl pendant",
-    waist="Ioskeha Belt",
+    waist="Ioskeha Belt +1",
     left_ear="Etiolation Earring",
     right_ear="Loquac. Earring",
     left_ring="Kishar Ring",
@@ -256,7 +272,7 @@ function get_sets()
 	sets.default = {
 	 ammo="Pemphredo Tathlum",
     head="Ig. Burgonet +2",
-    body={ name="Carm. Scale Mail", augments={'MP+60','INT+10','MND+10',}},
+    body={ name="Carm. Sc. Mail +1", augments={'Attack+20','"Mag.Atk.Bns."+12','"Dbl.Atk."+4',}},
     hands={ name="Fall. Fin. Gaunt. +1", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+16','"Conserve MP"+3','"Fast Cast"+3',}},
     feet="Flam. Gambieras +1",

@@ -36,7 +36,7 @@ end
 
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Melee', 'Acc', 'DW', 'DWAcc')
+    state.OffenseMode:options('Arma', 'Foma', 'Death', 'Ataktos')
     state.RangedMode:options('Normal', 'Acc')
     state.WeaponskillMode:options('Normal', 'Acc', 'Att', 'Mod')
     state.CastingMode:options('Normal', 'Resistant')
@@ -52,7 +52,7 @@ function user_setup()
 	gear.ranged_cape = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+7','"Store TP"+10',}}
 
     gear.RAbullet = "Decimating Bullet"
-    gear.WSbullet = "Devastating Bullet"
+    gear.WSbullet = "Chrono Bullet"
     gear.MAbullet = "Devastating Bullet"
     gear.QDbullet = "Animikii Bullet"
     options.ammo_warning_limit = 10
@@ -89,7 +89,7 @@ function init_gear_sets()
 								head="Lanun Tricorne +3",
 								neck="Regal Necklace",
 								hands="Chasseur's Gants +1",
-								Ring="Luzaf's Ring",
+								Ring1="Luzaf's Ring",
 								back=gear.ls_cape}  
 	
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chasseur's Culottes +1"})
@@ -282,10 +282,9 @@ sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
     
     -- Idle sets
     sets.idle = {
-		range="Armageddon",
 		ammo=gear.RAbullet,
         head="Lanun Tricorne +3",
-		neck="Loricate Torque",
+		neck="Loricate Torque +1",
 		ear1="Ethereal Earring",ear2="Etiolation Earring",
         body="Lanun Frac +3",
 		hands="Meghanada Gloves +2",
@@ -296,9 +295,8 @@ sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
 		feet="Lanun Bottes +3"}
 
     sets.idle.Town = {ammo=gear.RAbullet,
-		range="Armageddon",
         head="Lanun Tricorne +3",
-		neck="Loricate Torque",
+		neck="Loricate Torque +1",
 		ear1="Ethereal Earring",ear2="Etiolation Earring",
         body="Lanun Frac +3",
 		hands="Meghanada Gloves +2",
@@ -310,12 +308,12 @@ sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
     
     -- Defense sets
     sets.defense.PDT = {
-        head="Meghanada Visor +2",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
         body="Meghanada Cuirie +2",hands="Meghanada Gloves +2",ring1="Defending Ring",ring2="Vocane Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Lanun Bottes +3"}
 
     sets.defense.MDT = {
-        head="Dampening Tam",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+        head="Dampening Tam",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
         body="Meghanada Cuirie +2",hands="Meghanada Gloves +2",ring1="Defending Ring",ring2="Vocane Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Lanun Bottes +3"}
     
@@ -329,57 +327,73 @@ sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    sets.engaged.Melee = {
-		range="Armageddon",
-		ammo=gear.RAbullet,
-        head="Adhemar Bonnet +1",
-		neck="Lissome Necklace",
-		ear1="Cessance Earring",ear2="Brutal Earring",
-        body="Adhemar Jacket +1",
-		hands="Adhemar Wrist. +1",
-		ring1="Petrov Ring",ring2="Epona's Ring",
-        back=gear.melee_cape,
-		waist="Kentarch Belt +1",
-		legs="Herculean Trousers",
-		feet="Herculean Boots"}
+    sets.engaged.Arma = {
+	ammo=gear.RAbullet,
+    range="Armageddon",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Herculean Trousers", augments={'Attack+30','"Triple Atk."+4','DEX+10','Accuracy+11',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+18 Attack+18','"Triple Atk."+2','DEX+13','Accuracy+12',}},
+    neck="Iskur Gorget",
+    waist="Kentarch Belt +1",
+    left_ear="Cessance Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Epona's Ring",
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+8','"Store TP"+10','Damage taken-5%',}},
+}
     
-    sets.engaged.Acc = {ammo=gear.RAbullet,
-		range="Armageddon",
-        head="Adhemar Bonnet +1",
-		neck="Sanctity Necklace",
-		ear1="Cessance Earring",ear2="Brutal Earring",
-        body="Adhemar Jacket +1",
-		hands="Adhemar Wrist. +1",
-		ring1="Patricius Ring",ring2="Ilabrat Ring",
-        back=gear.melee_cape,
-		waist="Kentarch Belt +1",
-		legs="Carmine Cuisses +1",
-		feet="Herculean Boots"}
+    sets.engaged.Foma = {
+	ammo=gear.RAbullet,
+	range="Fomalhaut",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Herculean Trousers", augments={'Attack+30','"Triple Atk."+4','DEX+10','Accuracy+11',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+18 Attack+18','"Triple Atk."+2','DEX+13','Accuracy+12',}},
+    neck="Iskur Gorget",
+    waist="Kentarch Belt +1",
+    left_ear="Cessance Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Epona's Ring",
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+8','"Store TP"+10','Damage taken-5%',}},
+	}
 
-    sets.engaged.DW = {ammo=gear.RAbullet,
-		range="Armageddon",
-        head="Adhemar Bonnet +1",
-		neck="Iskur Gorget",
-		ear1="Heartseeker Earring",ear2="Dudgeon Earring",
-        body="Adhemar Jacket +1",
-		hands="Adhemar Wrist. +1",
-		ring1="Petrov Ring",ring2="Epona's Ring",
-        back=gear.melee_cape,
-		waist="Windbuffet Belt +1",
-		legs="Carmine Cuisses +1",
-		feet="Herculean Boots"}
+    sets.engaged.Death = {
+	ammo=gear.RAbullet,
+	range="Death Penalty",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Herculean Trousers", augments={'Attack+30','"Triple Atk."+4','DEX+10','Accuracy+11',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+18 Attack+18','"Triple Atk."+2','DEX+13','Accuracy+12',}},
+    neck="Iskur Gorget",
+    waist="Kentarch Belt +1",
+    left_ear="Cessance Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Epona's Ring",
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+8','"Store TP"+10','Damage taken-5%',}},
+	} 	
     
-    sets.engaged.DWAcc = {ammo=gear.RAbullet,
-		range="Armageddon",
-        head="Dampening Tam",
-		neck="Sanctity Necklace",
-		ear1="Heartseeker Earring",ear2="Dudgeon Earring",
-        body="Adhemar Jacket",
-		hands="Herculean Gloves",ring1="Patricius Ring",ring2="Ilabrat Ring",
-        back=gear.melee_cape,
-		waist="Kentarch Belt +1",
-		legs="Carmine Cuisses +1",
-		feet=gear.FeetMeleeAcc}
+    sets.engaged.Ataktos = {
+	ammo=gear.RAbullet,
+	range="Anarchy",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Herculean Trousers", augments={'Attack+30','"Triple Atk."+4','DEX+10','Accuracy+11',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+18 Attack+18','"Triple Atk."+2','DEX+13','Accuracy+12',}},
+    neck="Iskur Gorget",
+    waist="Kentarch Belt +1",
+    left_ear="Cessance Earring",
+    right_ear="Telos Earring",
+    left_ring="Petrov Ring",
+    right_ring="Epona's Ring",
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+8','"Store TP"+10','Damage taken-5%',}},
+	}
 end
 
 -------------------------------------------------------------------------------------------------------------------

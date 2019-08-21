@@ -215,7 +215,7 @@ function init_gear_sets()
 
     sets.midcast.Macc = {
 		sub="Ammurapi Shield",
-        ammo="Pemphredo Tathlum",
+        -- ammo="Pemphredo Tathlum",
         head="Geomancy Galero +2",
         neck="Erra Pendant", 
         ear1="Lifestorm Earring", 
@@ -260,6 +260,8 @@ function init_gear_sets()
         neck="Incanter's Torque", 
         --body="Anhur Robe",
         --hands="Ayao's Gloves"
+        ring1="Stikini Ring +1",
+        ring2="Stikini Ring +1"
 	})
 	
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {

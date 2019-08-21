@@ -43,8 +43,8 @@ function user_setup()
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 	
     gear.snapshot_head = { name="Taeon Chapeau", augments={'Rng.Acc.+18','"Snapshot"+5','"Snapshot"+5',}}
-    gear.magic_hands = { name="Herculean Gloves", augments={'Mag. Acc.+17','Weapon skill damage +5%','INT+6',}}
-    gear.magic_legs = { name="Herculean Trousers", augments={'"Mag.Atk.Bns."+23','Weapon skill damage +4%',}}
+    gear.magic_hands = { name="Herculean Gloves", augments={'Accuracy+28','Pet: DEX+2','Weapon skill damage +8%',}}
+    gear.magic_legs = { name="Herculean Trousers", augments={'"Mag.Atk.Bns."+15','Weapon skill damage +2%','AGI+15','Mag. Acc.+9',}}
     gear.melee_hands = { name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}}
     gear.ranged_hands = { name="Adhemar Wrist. +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}}
 	gear.melee_feet = { name="Herculean Boots", augments={'Attack+15','INT+7','Quadruple Attack +3','Accuracy+11 Attack+11',}}
@@ -83,11 +83,11 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
+    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +3"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +3"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
     
-    sets.precast.CorsairRoll = {head="Lanun Tricorne +2",neck="Regal Necklace",hands="Chasseur's Gants +1",back=gear.ls_cape}    
+    sets.precast.CorsairRoll = {head="Lanun Tricorne +3",neck="Regal Necklace",hands="Chasseur's Gants +1",back=gear.ls_cape}    
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chasseur's Culottes +1"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +1"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chasseur's Tricorne +1"})
@@ -131,8 +131,8 @@ function init_gear_sets()
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {ring2="Rufescent Ring"})
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Lanun Tricorne +2",neck=gear.ElementalGorget,ear1="Telos Earring",ear2="Moonshade Earring",
-        -- head="Lanun Tricorne +2",neck=gear.ElementalGorget,ear1="Ishvara Earring",ear2="Moonshade Earring",
+        head="Lanun Tricorne +3",neck=gear.ElementalGorget,ear1="Telos Earring",ear2="Moonshade Earring",
+        -- head="Lanun Tricorne +3",neck=gear.ElementalGorget,ear1="Ishvara Earring",ear2="Moonshade Earring",
         body="Laksamana's Frac +3",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.LastStand_cape,waist="Fotia Belt",legs="Meghanada Chausses +2",feet="Lanun Bottes +3"}
     
@@ -149,7 +149,7 @@ function init_gear_sets()
     sets.precast.WS['Leaden Salute'] = set_combine(sets.precast.WS['Wildfire'], {head="Pixie Hairpin +1",
 		ear2="Moonshade Earring",ring1="Archon Ring"})
     
-    sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS['Leaden Salute'], {ring1="Dingir Ring",back=gear.ls_cape})
+    sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS['Leaden Salute'], {back=gear.ls_cape})
     
     
     -- Midcast Sets TODO
@@ -166,12 +166,12 @@ function init_gear_sets()
 
     sets.midcast.CorsairShot.Acc = {ammo=gear.QDbullet,
         head="Laksamana's Tricorne +3",neck="Commodore Charm +2",ear1="Enervating Earring",ear2="Hecate's Earring",
-        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Stikini Ring",
+        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Stikini Ring +1",
         back=gear.ranged_cape,waist="Eschan Stone",legs="Mummu Kecks +2",feet="Laksamana's Boots +3"}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
         head="Laksamana's Tricorne +3",neck="Commodore Charm +2",ear1="Enervating Earring",ear2="Psystorm Earring",
-        body="Mummu Jacket +2",hands="Laskamana's Gants +2",ring1="Regal Ring",ring2="Stikini Ring",
+        body="Mummu Jacket +2",hands="Laskamana's Gants +2",ring1="Regal Ring",ring2="Stikini Ring +1",
         back=gear.ranged_cape,waist="Eschan Stone",legs="Mummu Kecks +2",feet="Laksamana's Boots +3"}
 
     sets.midcast.CorsairShot['Dark Shot'] = sets.midcast.CorsairShot['Light Shot']
@@ -199,7 +199,7 @@ function init_gear_sets()
     
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
-        head="Lanun Tricorne +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
+        head="Lanun Tricorne +3",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
         body="Lanun Frac +3",hands="Meghanada Gloves +2",ring1="Defending Ring",ring2="Vocane Ring +1",
         back="Moonbeam Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Lanun Bottes +3"}
     
@@ -426,7 +426,7 @@ function do_bullet_checks(spell, spellMap, eventArgs)
     
     if spell.type == 'WeaponSkill' then
         if spell.skill == "Marksmanship" then
-            if spell.element == 'None' then
+            if spell.element == 'None' or spell.english == 'Last Stand' then
                 -- physical weaponskills
                 bullet_name = gear.WSbullet
             else
@@ -445,6 +445,7 @@ function do_bullet_checks(spell, spellMap, eventArgs)
             bullet_min_count = 3
         end
     end
+    add_to_chat(104, bullet_name)
     
     local available_bullets = player.inventory[bullet_name] or player.wardrobe[bullet_name]
     

@@ -39,7 +39,7 @@ end
 -------------------------------------------------------------------------------------------------------------------
 
 function user_setup()
-	state.OffenseMode:options('Normal', 'HighAcc', 'MDT', 'DPS', 'PDT', 'MEva')
+	state.OffenseMode:options('Normal', 'HighAcc', 'DPS', 'PDT', 'MEva')
 	state.WeaponskillMode:options('Normal', 'Acc')
 	state.CastingMode:options('Normal', 'Resistant')
 	state.IdleMode:options('Normal', 'DT')
@@ -91,7 +91,7 @@ function init_gear_sets()
 		body="Emet Harness +1", --10
 		hands="Kurys Gloves", --9
 		legs="Eri. Leg Guards +1", --7
-		feet="Erilaz Greaves +1",--6
+		feet="Ahosi Leggings",--7
 		neck="Moonbeam Necklace", --10
 		ear1="Cryptic Earring", --4
 		ear2="Friomisi Earring", --2
@@ -126,9 +126,9 @@ function init_gear_sets()
 
 	sets.precast.JA['Swipe'] = sets.precast.JA['Lunge']
 	sets.precast.JA['Gambit'] = {hands="Runeist's Mitons +3"}
-	sets.precast.JA['Rayke'] = {feet="Futhark Boots +2"}
+	sets.precast.JA['Rayke'] = {feet="Futhark Boots +3"}
 	sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity, {body="Futhark Coat +3"})
-	sets.precast.JA['Swordplay'] = set_combine(sets.Enmity, {hands="Futhark Mitons +1"})
+	sets.precast.JA['Swordplay'] = set_combine(sets.Enmity, {hands="Futhark Mitons +3"})
 	sets.precast.JA['Embolden'] = set_combine(sets.Enmity, {back="Evasionist's Cape"})
 	sets.precast.JA['Vivacious Pulse'] = set_combine(sets.Enmity, {head="Erilaz Galea +1", neck="Incanter's Torque"})
 	sets.precast.JA['One For All'] = set_combine(sets.Enmity, {})
@@ -247,7 +247,7 @@ function init_gear_sets()
 		head=gear.wsd_head,
 		body=gear.wsd_body,
 		hands="Meg. Gloves +2",
-		legs="Lustratio Subligar",
+		legs="Lustratio Subligar +1",
 		feet="Lustratio Leggings +1",
 		-- neck="Caro Necklace",
 		neck="Fotia Gorget",
@@ -265,7 +265,7 @@ function init_gear_sets()
 		head=gear.wsd_head,
 		body=gear.wsd_body,
 		hands="Meg. Gloves +2",
-		legs="Lustratio Subligar",
+		legs="Lustratio Subligar +1",
 		feet="Lustratio Leggings +1",
 		neck="Fotia Gorget",
 		ear1="Moonshade Earring",
@@ -540,30 +540,13 @@ function init_gear_sets()
 		waist="Windbuffet Belt +1"
 		}
 
-	sets.engaged.MDT = {
-		sub="Irenic Strap +1",
-		ammo="Staunch Tathlum +1",
-		head="Futhark Bandeau +3",
-		body="Futhark Coat +3",
-		hands="Meghanada Gloves +2",
-		legs="Erilaz Leg Guards +1",
-		feet="Erilaz Greaves +1",
-		neck="Warder's Charm +1",
-		ear1="Etiolation Earring",
-		ear2="Odnowa Earring +1",
-		ring1="Defending Ring",
-		ring2="Vocane Ring +1",
-		back=gear.pdt_cape,
-		waist="Engraved Belt"
-		}
-
 	sets.engaged.DPS = {
 		sub="Utu Grip",
 		ammo="Staunch Tathlum +1",
 		head="Ayanmo Zucchetto +2",
 		body="Ayanmo Corazza +2",
 		hands="Meghanada Gloves +2",
-		legs="Erilaz Leg Guards +1",
+		legs="Meghanada Chausses +2",
 		feet=gear.tp_feet,
 		neck="Futhark Torque +1",
 		ear1="Telos Earring",
